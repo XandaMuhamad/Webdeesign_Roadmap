@@ -1,0 +1,690 @@
+/* CSS Hero Specific Styles */
+.css-hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  overflow: hidden;
+  background: var(--bg-color);
+  padding-top: 80px;
+}
+
+.hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.5rem;
+  background: rgba(33, 150, 243, 0.1);
+  border-radius: 50px;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #2196F3;
+  font-weight: 600;
+}
+
+.hero-badge i {
+  font-size: 1.3rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #2196F3, #00BCD4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.style-decoration {
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  font-family: 'Fira Code', monospace;
+  color: rgba(33, 150, 243, 0.2);
+  font-size: 2rem;
+  font-weight: bold;
+  transform: rotate(10deg);
+}
+
+.hero-description {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+.highlight {
+  color: #2196F3;
+  font-weight: 600;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-item i {
+  color: #2196F3;
+  font-size: 1.2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #2196F3, #00BCD4);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+}
+
+.secondary-button {
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.secondary-button:hover {
+  transform: translateY(-2px);
+}
+
+.code-editor {
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.editor-header {
+  background: #2d2d2d;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.editor-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editor-dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f56;
+}
+
+.editor-dots span:nth-child(2) {
+  background: #ffbd2e;
+}
+
+.editor-dots span:nth-child(3) {
+  background: #27c93f;
+}
+
+.file-name {
+  color: #858585;
+  font-size: 0.9rem;
+  font-family: 'Fira Code', monospace;
+}
+
+.editor-content {
+  padding: 1.5rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #d4d4d4;
+}
+
+.floating-elements {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.css-property {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  background: rgba(33, 150, 243, 0.1);
+  border-radius: 4px;
+  color: #2196F3;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.css-property:nth-child(1) {
+  top: 15%;
+  left: 10%;
+  animation: float1 6s ease-in-out infinite;
+}
+
+.css-property:nth-child(2) {
+  top: 45%;
+  right: 15%;
+  animation: float2 7s ease-in-out infinite;
+}
+
+.css-property:nth-child(3) {
+  bottom: 30%;
+  left: 20%;
+  animation: float3 8s ease-in-out infinite;
+}
+
+.css-property:nth-child(4) {
+  bottom: 15%;
+  right: 25%;
+  animation: float4 6.5s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0%, 100% {
+      transform: translate(0, 0);
+  }
+  50% {
+      transform: translate(-20px, -15px);
+  }
+}
+
+@keyframes float2 {
+  0%, 100% {
+      transform: translate(0, 0);
+  }
+  50% {
+      transform: translate(15px, -20px);
+  }
+}
+
+@keyframes float3 {
+  0%, 100% {
+      transform: translate(0, 0);
+  }
+  50% {
+      transform: translate(-15px, 20px);
+  }
+}
+
+@keyframes float4 {
+  0%, 100% {
+      transform: translate(0, 0);
+  }
+  50% {
+      transform: translate(20px, -10px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .css-property {
+      font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .floating-elements {
+      display: none;
+  }
+}
+
+/* Language-specific Adjustments */
+[lang="ar"] .hero-container,
+[lang="ku"] .hero-container {
+    direction: rtl;
+}
+
+[lang="ar"] .hero-badge,
+[lang="ku"] .hero-badge {
+    flex-direction: row-reverse;
+}
+
+[lang="ar"] .hero-actions,
+[lang="ku"] .hero-actions {
+    flex-direction: row-reverse;
+}
+
+[lang="ar"] .feature-item,
+[lang="ku"] .feature-item {
+    flex-direction: row-reverse;
+}
+
+/* Code editor positioning */
+[lang="ar"] .code-editor,
+[lang="ku"] .code-editor,
+[lang="en"] .code-editor {
+    right: auto;
+    left: auto;
+    transform: none;
+    margin: 0;
+}
+
+/* Floating elements for RTL languages (Arabic/Kurdish) */
+[lang="ar"] .css-property:nth-child(1),
+[lang="ku"] .css-property:nth-child(1) {
+    top: 15%;
+    right: 10%;
+    left: auto;
+    animation: floatRTL1 6s ease-in-out infinite;
+}
+
+[lang="ar"] .css-property:nth-child(2),
+[lang="ku"] .css-property:nth-child(2) {
+    top: 45%;
+    left: 15%;
+    right: auto;
+    animation: floatRTL2 7s ease-in-out infinite;
+}
+
+[lang="ar"] .css-property:nth-child(3),
+[lang="ku"] .css-property:nth-child(3) {
+    bottom: 30%;
+    right: 20%;
+    left: auto;
+    animation: floatRTL3 8s ease-in-out infinite;
+}
+
+[lang="ar"] .css-property:nth-child(4),
+[lang="ku"] .css-property:nth-child(4) {
+    bottom: 15%;
+    left: 25%;
+    right: auto;
+    animation: floatRTL4 6.5s ease-in-out infinite;
+}
+
+/* Floating elements for LTR language (English) */
+[lang="en"] .css-property:nth-child(1) {
+    top: 15%;
+    left: 10%;
+    right: auto;
+    animation: floatLTR1 6s ease-in-out infinite;
+}
+
+[lang="en"] .css-property:nth-child(2) {
+    top: 45%;
+    right: 15%;
+    left: auto;
+    animation: floatLTR2 7s ease-in-out infinite;
+}
+
+[lang="en"] .css-property:nth-child(3) {
+    bottom: 30%;
+    left: 20%;
+    right: auto;
+    animation: floatLTR3 8s ease-in-out infinite;
+}
+
+[lang="en"] .css-property:nth-child(4) {
+    bottom: 15%;
+    right: 25%;
+    left: auto;
+    animation: floatLTR4 6.5s ease-in-out infinite;
+}
+
+/* RTL Animations */
+@keyframes floatRTL1 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(20px, -15px);
+    }
+}
+
+@keyframes floatRTL2 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-15px, -20px);
+    }
+}
+
+@keyframes floatRTL3 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(15px, 20px);
+    }
+}
+
+@keyframes floatRTL4 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-20px, -10px);
+    }
+}
+
+/* LTR Animations */
+@keyframes floatLTR1 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-20px, -15px);
+    }
+}
+
+@keyframes floatLTR2 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(15px, -20px);
+    }
+}
+
+@keyframes floatLTR3 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-15px, 20px);
+    }
+}
+
+@keyframes floatLTR4 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(20px, -10px);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    [lang="ar"] .code-editor,
+    [lang="ku"] .code-editor {
+        left: -60px;
+        transform: translateY(-50%) scale(0.9) rotate(-2deg);
+    }
+
+    [lang="en"] .code-editor {
+        right: -60px;
+        transform: translateY(-50%) scale(0.9) rotate(2deg);
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-container {
+        gap: 2rem;
+    }
+
+    .code-editor {
+        width: 100%;
+        transform: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 60px;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+    .hero-visual {
+        order: 2;
+        max-width: 600px;
+        margin: 2rem auto 0;
+    }
+
+    .code-editor {
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .floating-elements {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-hero {
+        padding-top: 60px;
+    }
+    
+    .hero-container {
+        padding-top: 40px;
+    }
+}
+
+/* Hero Visual Container - Added */
+.hero-visual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Updated Media Queries */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .feature-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .code-editor {
+        width: 100%;
+        transform: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .css-hero {
+        padding: 4rem 1rem;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        order: 1;
+        max-width: 100%;
+    }
+
+    .hero-visual {
+        order: 2;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .hero-badge {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feature-list {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .floating-elements {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .css-hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .code-editor {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-badge {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .style-decoration {
+        display: none;
+    }
+
+    .editor-content {
+        font-size: 0.8rem;
+    }
+
+    .feature-item {
+        padding: 0.8rem;
+    }
+}
+
+/* RTL/LTR Responsive Adjustments */
+@media (max-width: 992px) {
+    [lang="ar"] .hero-actions,
+    [lang="ku"] .hero-actions,
+    [lang="en"] .hero-actions {
+        flex-direction: column;
+    }
+
+    [lang="ar"] .feature-item,
+    [lang="ku"] .feature-item,
+    [lang="en"] .feature-item {
+        justify-content: center;
+    }
+}
+
+/* Dark Mode Adjustments */
+@media (prefers-color-scheme: dark) {
+    .code-editor {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* CSS Symbols */
+.css-symbols {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 15rem;
+    font-family: 'Fira Code', monospace;
+    color: rgba(33, 150, 243, 0.05); /* Using CSS blue color with low opacity */
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Update hero background z-index to ensure proper layering */
+.hero-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Ensure content stays above background */
+.hero-container {
+    position: relative;
+    z-index: 2;
+}

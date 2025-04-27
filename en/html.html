@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Roadmap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/mediaQuery.css">
+    <link rel="stylesheet" href="../css/html-styles.css">
+
+</head>
+<body>
+<input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+
+<div class="content">
+    <header>
+        <div class="container">
+            <div class="logo"><span class="navbar-logo"> RegayWeb </span> <i class="fas fa-road"></i></div>
+            <!-- HTML -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span class="nav-toggle-icon"></span>
+            </label>
+            <nav class="nav-menu-dropdown" aria-label="Main Navigation">
+                <div class="search-container">
+                    <input type="search" 
+                           class="search-box" 
+                           placeholder="Search content..." 
+                           aria-label="Search">
+                    <i class="fas fa-search search-icon"></i>
+                    
+                    <div class="search-results">
+                        <div class="search-result-item">
+                            <i class="fas fa-code"></i>
+                            <span>HTML Basics</span>
+                        </div>
+                        <div class="search-result-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Learn CSS</span>
+                        </div>
+                        <div class="search-result-item">
+                            <i class="fab fa-js"></i>
+                            <span>What is JavaScript?</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+                <a href="index.html" class="nav-link ">Home <i class="fas fa-home"></i></a>
+                <a href="./html.html" class="nav-link active">HTML <i class="fas fa-code"></i></a>
+                <a href="./css.html" class="nav-link">CSS <i class="fas fa-paint-brush"></i></a>
+                <a href="./javascript.html" class="nav-link">JavaScript <i class="fab fa-js"></i></a>
+                <a href="./about.html" class="nav-link">About <i class="fas fa-users"></i></a>
+
+                
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <section class="html-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">Learn HTML</span>
+                    <div class="code-tag-decoration">&lt;/&gt;</div>
+                </h1>
+
+                <p class="hero-description">
+                    Learn the basics of <span class="highlight">HTML</span> and start 
+                    <span class="typing-container">
+                        <span class="typing-text">
+                            <span class="word">Building Websites</span>
+                            <span class="word">Web Development</span>
+                            <span class="word">Web Creation</span>
+                        </span>
+                    </span>
+                </p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>HTML Fundamentals</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Code Examples</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Practical Training</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#start-learning" class="primary-button">
+                        <span class="button-content">Start Now
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                        <div class="button-glow"></div>
+                    </a>
+                    
+                    <a href="#course-outline" class="secondary-button">
+                        <i class="fas fa-list"></i>
+                        <span>Course Content</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <div class="editor-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="file-name">index.html</span>
+                    </div>
+                    <div class="editor-content">
+                        <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to HTML&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Learn Structure&lt;/li&gt;
+        &lt;li&gt;Master Tags&lt;/li&gt;
+        &lt;li&gt;Build Pages&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="floating-elements">
+                    <div class="html-tag">&lt;html&gt;</div>
+                    <div class="html-tag">&lt;body&gt;</div>
+                    <div class="html-tag">&lt;div&gt;</div>
+                    <div class="html-tag">&lt;p&gt;</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-background">
+            <div class="gradient-sphere"></div>
+            <div class="grid-overlay"></div>
+            <div class="html-symbols">&lt; /&gt;</div>
+        </div>
+    </section>
+
+    <section class="container roadmap-grid">
+        <div class="roadmap-card">
+            <a href="#modal-tags">
+                <i class="fas fa-tags"></i>
+                <h3>Basic Tags</h3>
+                <p>Learn about the fundamental HTML tags that structure web content.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-links">
+                <i class="fas fa-link"></i>
+                <h3>Links</h3>
+                <p>Learn how to create hyperlinks to connect web pages.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-lists">
+                <i class="fas fa-list"></i>
+                <h3>Lists</h3>
+                <p>Understand how to create ordered and unordered lists.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-images">
+                <i class="fas fa-image"></i>
+                <h3>Images</h3>
+                <p>Learn how to embed and style images in HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-attributes">
+                <i class="fas fa-asterisk"></i>
+                <h3>Attributes</h3>
+                <p>Understand the use of HTML attributes to add extra information to elements.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-forms">
+                <i class="fas fa-file-alt"></i>
+                <h3>Forms</h3>
+                <p>Understand how to create forms to gather user input in HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-tables">
+                <i class="fas fa-table"></i>
+                <h3>Tables</h3>
+                <p>Learn how to create and style tables in HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-media">
+                <i class="fas fa-image"></i>
+                <h3>Media</h3>
+                <p>Understand how to embed images, videos, and audio in HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-semantics">
+                <i class="fas fa-book"></i>
+                <h3>HTML Semantics</h3>
+                <p>Explore the importance of semantic HTML for accessibility and SEO.</p>
+            </a>
+        </div>
+
+    </section>
+
+    <section id="modal-tags" class="modal">
+        <div class="modal-content">
+            <h2>Basic HTML Tags</h2>
+            <p>HTML tags are used to structure content on the web:</p>
+            <pre>
+          <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"container"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;h1</span> <span class="attr">id</span>=<span class="str">"title"</span><span class="tag">&gt;</span>Hello World<span class="tag">&lt;/h1&gt;</span>
+            <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="str">"description"</span><span class="tag">&gt;</span>This is a paragraph<span class="tag">&lt;/p&gt;</span>
+          <span class="tag">&lt;/div&gt;</span></pre><a href="#tags" class="close-btn">Close</a>
+          </div>
+    </section>
+    <a id="tags" class="hidden-close"></a>
+
+    <section id="modal-links" class="modal">
+        <div class="modal-content">
+            <h2>Links</h2>
+            <p>Hyperlinks are created using the <code>&lt;a&gt;</code> tag. They allow you to link to other web pages or resources.</p>
+            <pre>
+<span class="tag">&lt;a <span class="attribute"> href="https://example.com"</span>&gt;<span class="string">Visit Example</span>&lt;/a&gt;</span>
+    </pre>
+            <a href="#links" class="close-btn">Close</a>
+        </div>
+    </section>
+    <a id="links" class="hidden-close"></a>
+
+    <section id="modal-lists" class="modal">
+        <div class="modal-content">
+            <h2>Lists</h2>
+            <p>HTML provides two types of lists: ordered lists (<code>&lt;ol&gt;</code>) and unordered lists (<code>&lt;ul&gt;</code>).</p>
+            <pre>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+            <a href="#lists" class="close-btn">Close</a>
+        </div>
+    </section>
+    <a id="lists" class="hidden-close"></a>
+
+    <section id="modal-images" class="modal">
+        <div class="modal-content">
+            <h2>Images</h2>
+            <p>Images can be embedded using the <code>&lt;img&gt;</code> tag. You can also add attributes like <code>alt</code> for accessibility.</p>
+            <pre>
+&lt;img src="image.jpg" alt="Description"&gt;
+    </pre>
+            <a href="#images" class="close-btn">Close</a>
+        </div>
+    </section>
+    <a id="images" class="hidden-close"></a>
+
+    <section id="modal-attributes" class="modal">
+        <div class="modal-content">
+            <h2>Attributes</h2>
+            <p>Attributes provide additional information about HTML elements. Common attributes include <code>id</code>, <code>class</code>, and <code>style</code>.</p>
+            <pre>
+&lt;div id="uniqueId" class="className" style="color: red;"&gt;Content&lt;/div&gt;
+    </pre>
+            <a href="#attributes" class="close-btn">Close</a>
+        </div>
+    </section>
+    <a id="attributes" class="hidden-close"></a>
+
+    <section id="modal-forms" class="modal">
+        <div class="modal-content">
+            <h2>HTML Forms</h2>
+            <p>HTML forms are used to collect user inputs and send data to a server. Important form elements include:</p>
+            <ul>
+                <li><code>&lt;input&gt;</code> – Used for various input types such as text, password, email, etc.</li>
+                <li><code>&lt;textarea&gt;</code> – Allows multi-line text input.</li>
+                <li><code>&lt;button&gt;</code> – Used for submitting forms.</li>
+            </ul>
+            <pre>
+&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+        </pre>
+            <a href="#forms" class="close-btn">Close</a>
+        </div>
+    </section>
+    <a id="forms" class="hidden-close"></a>
+
+    <section id="modal-tables" class="modal">
+        <div class="modal-content">
+            <h2>HTML Tables</h2>
+            <p>HTML tables are used to display tabular data. Key elements include:</p>
+            <ul>
+                <li><code>&lt;table&gt;</code> – Defines the table.</li>
+                <li><code>&lt;tr&gt;</code> – Defines a table row.</li>
+                <li><code>&lt;td&gt;</code> – Defines a table cell.</li>
+                <li><code>&lt;th&gt;</code> – Defines a table header cell.</li>
+            </ul>
+            <pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+        </pre>
+            <a href="#tables" class="close-btn">Close</a>
+        </div>
+    </section>
+    <a id="tables" class="hidden-close"></a>
+
+    <section id="modal-media" class="modal">
+        <div class="modal-content">
+            <h2>HTML Media</h2>
+            <p>HTML allows you to embed various types of media, such as images, videos, and audio. Key elements include:</p>
+            <ul>
+                <li><code>&lt;img&gt;</code> – Embeds an image.</li>
+                <li><code>&lt;video&gt;</code> – Embeds a video.</li>
+                <li><code>&lt;audio&gt;</code> – Embeds an audio file.</li>
+            </ul>
+            <pre>
+&lt;img src="image.jpg" alt="Description"&gt;
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;
+        </pre>
+            <a href="#media" class="close-btn">Close</a>
+        </div>
+    </section>
+    <a id="media" class="hidden-close"></a>
+
+    <section id="modal-semantics" class="modal">
+    <div class="modal-content">
+        <h2>HTML Semantics</h2>
+        <p>Explore the importance of semantic HTML for accessibility and SEO. Semantic elements clearly describe their meaning in a human- and machine-readable way.</p>
+        <ul>
+            <li><code>&lt;header&gt;</code> – Defines a header for a document or section.</li>
+            <li><code>&lt;nav&gt;</code> – Defines a set of navigation links.</li>
+            <li><code>&lt;article&gt;</code> – Defines an independent, self-contained content.</li>
+            <li><code>&lt;section&gt;</code> – Defines a section in a document.</li>
+            <li><code>&lt;footer&gt;</code> – Defines a footer for a document or section.</li>
+        </ul>
+        <pre>
+&lt;header&gt;This is a header&lt;/header&gt;
+&lt;nav&gt;This is a navigation&lt;/nav&gt;
+&lt;article&gt;This is an article&lt;/article&gt;
+&lt;section&gt;This is a section&lt;/section&gt;
+&lt;footer&gt;This is a footer&lt;/footer&gt;
+        </pre>
+        <a href="#semantics" class="close-btn">Close</a>
+    </div>
+</section>
+<a id="semantics" class="hidden-close"></a>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-logo">
+                <span>Web Path</span>
+                <i class="fas fa-road"></i>
+            </div>
+            <p class="footer-description">
+                An educational platform for web development in English, enabling everyone to learn programming.
+            </p>
+            <div class="social-links">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">Important Links</h3>
+            <ul class="footer-links">
+                <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+                <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+                <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">Contact Us</h3>
+            <ul class="footer-links">
+                <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Iraq, Kurdistan</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Web Development Roadmap 2024. All rights reserved by our team &copy;</p>
+        <nav class="language-selector">
+            <a href="../index.html">Kurdish</a>
+            <a href="../ar/index.html">Arabic</a>
+            <a href="./index.html" class="active">English</a>
+        </nav>
+    </div>
+</footer>
+</div>
+</body>
+</html>

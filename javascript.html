@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Roadmap - JavaScript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css">
+    <link rel="stylesheet" href="./css/javascript-styles.css">
+</head>
+<body>
+<input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+<div class="content">
+    <header>
+        <div class="container">
+            <div class="logo"><span class="navbar-logo">ڕیگای وێب</span> <i class="fas fa-road"></i></div>
+            <!-- HTML -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span class="nav-toggle-icon"></span>
+            </label>
+            <nav class="nav-menu-dropdown" aria-label="Main Navigation">
+                <div class="search-container">
+                    <input type="search" 
+                           class="search-box" 
+                           placeholder="گەڕان لە ناوەڕۆکەکان..." 
+                           aria-label="Search">
+                    <i class="fas fa-search search-icon"></i>
+                    
+                    <div class="search-results">
+                        <div class="search-result-item">
+                            <i class="fas fa-code"></i>
+                            <span>HTML بنەڕەتەکانی</span>
+                        </div>
+                        <div class="search-result-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>CSS فێربوونی</span>
+                        </div>
+                        <div class="search-result-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript چییە؟</span>
+                        </div>
+                    </div>
+                </div>
+
+                <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+                <a href="index.html" class="nav-link ">ماڵەوە <i class="fas fa-home"></i></a>
+                <a href="./html.html" class="nav-link"> HTML<i class="fas fa-code"></i></a>
+                <a href="./css.html" class="nav-link "> CSS<i class="fas fa-paint-brush"></i></a>
+                <a href="./javascript.html" class="nav-link active"> JavaScript<i class="fab fa-js"></i></a>
+                <a href="./about.html" class="nav-link ">دەربارە <i class="fas fa-users"></i></a>
+
+                
+            </nav>
+        </div>
+    </header>
+
+  <main>
+    <section class="js-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    فێربوونی 
+                    <span class="gradient-text">JavaScript</span>
+                    <span class="code-tag-decoration">{}</span>
+                </h1>
+                
+                <p class="hero-description">
+                    فێری <span class="highlight">JavaScript</span> ببە، بەهێزترین زمانی بەرنامەسازی بۆ وێب. لێرەدا فێری هەموو شتێک دەبیت لە بنەڕەتەوە تا ئاستی پێشکەوتوو.
+                </p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fas fa-code"></i>
+                        <span>کۆدی ئینتەراکتیڤ</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>پرۆژەی کرداری</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>ڕاهێنانی بەردەوام</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#start-learning" class="cta-button primary">
+                        <span class="button-icon">
+                            <i class="fas fa-code"></i>
+                        </span>
+                        <span class="button-text">
+                            <span class="button-label">دەست پێبکە</span>
+                            <span class="button-description">فێربوونی JavaScript</span>
+                        </span>
+                        <span class="button-arrow">
+                            <i class="fas fa-arrow-left"></i>
+                        </span>
+                    </a>
+                    
+                    <a href="#course-outline" class="cta-button secondary">
+                        <span class="button-icon">
+                            <i class="fas fa-list-ul"></i>
+                        </span>
+                        <span class="button-text">
+                            <span class="button-label">ناوەڕۆک</span>
+                            <span class="button-description">بەشەکانی کۆرس</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="code-editor">
+                <div class="editor-header">
+                    <div class="editor-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="file-name">example.js</span>
+                </div>
+                <div class="editor-content">
+                    <!-- Add your JavaScript code example here -->
+                    <pre><code>
+function learnJS() {
+    const skills = ['DOM', 'Events', 'API'];
+    let progress = 0;
+    
+    function updateProgress() {
+        progress += 20;
+        console.log(`Progress: ${progress}%`);
+    }
+    
+    skills.forEach(skill => {
+        console.log(`Learning ${skill}...`);
+        updateProgress();
+    });
+}
+
+learnJS();</code></pre>
+                </div>
+            </div>
+
+            <div class="floating-elements">
+                <div class="js-tag">function()</div>
+                <div class="js-tag">=></div>
+                <div class="js-tag">const</div>
+                <div class="js-tag">{ }</div>
+            </div>
+        </div>
+
+        <div class="hero-background">
+            <div class="gradient-sphere"></div>
+            <div class="grid-overlay"></div>
+            <div class="js-symbols">{}</div>
+        </div>
+    </section>
+
+    <section class="container roadmap-grid">
+      <div class="roadmap-card">
+        <a href="#modal-variables">
+          <i class="fas fa-database"></i>
+          <h3>گۆڕاوەکان و جۆرەکانی داتا</h3>
+          <p>
+            فێری گۆڕاوەکانی جاڤاسکریپت ببە، چۆن پێناسەیان دەکەیت، و جۆرەکانی داتا چین
+          </p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-functions">
+          <i class="fas fa-code"></i>
+          <h3>فەنکشنەکان</h3>
+          <p>
+            فێری دروستکردن و بەکارهێنانی فەنکشن ببە لە جاڤاسکریپت
+          </p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-control">
+          <i class="fas fa-project-diagram"></i>
+          <h3>کۆنترۆڵ سترەکچەر</h3>
+          <p>
+            فێری کردنەوەی ئی و لووپ و سویتچ ببە لە جاڤاسکرێپت
+          </p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-dom">
+          <i class="fas fa-tree"></i>
+          <h3>دەستکاری DOM</h3>
+          <p>
+            فێری بەکارهێنان و دەستکاری کردنی زانیاری ببە بە جاڤاسکرێپت
+          </p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-events">
+          <i class="fas fa-bolt"></i>
+          <h3>مامەڵەکردن لەگەڵ ڕووداوەکان</h3>
+          <p>
+            فێری مامەڵەکردن ببە لەگەڵ کرداری بەکارهێنەر لە ڕێگای جاڤاسکرێپت
+          </p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-async">
+          <i class="fas fa-sync-alt"></i>
+          <h3>جاڤاسکریپتی ناهاوکات</h3>
+          <p>
+            فێری پرۆگرامکردنی ناهاوکات ببە لەگەڵ کۆڵباک، پرۆمیس، و ئەسینک/ئەوەیت
+          </p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-objects">
+          <i class="fas fa-object-group"></i>
+          <h3>ئۆبجێکتەکان</h3>
+          <p>فێری ئۆبجێکتەکانی جاڤاسکریپت و چۆنیەتی بەکارهێنانیان ببە</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-arrays">
+          <i class="fas fa-th"></i>
+          <h3>ئەڕەیەکان</h3>
+          <p>تێگەیشتن لە چۆنیەتی کارکردن لەگەڵ ئەڕەیەکان لە جاڤاسکریپت</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-debugging">
+          <i class="fas fa-bug"></i>
+          <h3>هەڵەدۆزینەوە</h3>
+          <p>فێربە چۆن بە کاریگەری هەڵەکانی کۆدی جاڤاسکریپت بدۆزیتەوە</p>
+        </a>
+      </div>
+
+    </section>
+
+
+    <section id="modal-variables" class="modal">
+        <div class="modal-content">
+            <h2>گۆڕاوەکان و جۆرەکانی داتا</h2>
+            <p>گۆڕاوەکان لە جاڤاسکریپت بەکاردێن بۆ خەزنکردنی زانیاری.</p>
+
+            <div class="code-section large-code">
+                <h3>نموونەی گۆڕاوەکان:</h3>
+                <pre><code><span class="keyword">let</span> <span class="variable">name</span> = <span class="string">"ئازاد"</span>;
+<span class="keyword">let</span> <span class="variable">age</span> = <span class="number">30</span>;
+<span class="keyword">let</span> <span class="variable">isStudent</span> = <span class="keyword">true</span>;
+<span class="keyword">let</span> <span class="variable">person</span> = { 
+    <span class="variable">name</span>: <span class="string">"ئازاد"</span>, 
+    <span class="variable">age</span>: <span class="number">30</span> 
+};</code></pre>
+            </div>
+
+            <div class="output-section">
+                <h3>دەرئەنجام:</h3>
+                <div class="console-output">
+                    <div>> console.log(name);</div>
+                    <div class="string">"ئازاد"</div>
+                    <div>> console.log(age);</div>
+                    <div class="number">30</div>
+                    <div>> console.log(isStudent);</div>
+                    <div class="keyword">true</div>
+                </div>
+            </div>
+
+            <div class="explanation">
+                <h4>جۆرەکانی داتا:</h4>
+                <ul>
+                    <li><code>string</code> - بۆ دەق (وەک "ئازاد")</li>
+                    <li><code>number</code> - بۆ ژمارە (وەک ٣٠)</li>
+                    <li><code>boolean</code> - بۆ ڕاست/هەڵە</li>
+                    <li><code>object</code> - بۆ کۆمەڵێک خاسیەت</li>
+                    <li><code>array</code> - بۆ لیستی بەهاکان</li>
+                </ul>
+            </div>
+            <a href="#variables" class="close-btn">داخستن</a>
+        </div>
+    </section>
+    <a id="variables" class="hidden-close"></a>
+
+
+      <section id="modal-functions" class="modal">
+      <div class="modal-content">
+        <h2>فەنکشنەکان</h2>
+        <p>فەنکشنەکان کۆدێکن کە دەتوانرێت دووبارە بەکاربهێنرێنەوە و یارمەتیدەرن بۆ ڕێکخستنی کۆد.</p>
+
+        <div class="code-section large-code">
+            <h3>فەنکشنی سادە:</h3>
+            <pre><code><span class="keyword">function</span> <span class="function">sayHello</span>() {
+    <span class="variable">console</span>.<span class="function">log</span>(<span class="string">"سڵاو، جیهان!"</span>);
+}
+<span class="function">sayHello</span>(); <span class="comment">// Output: سڵاو، جیهان!</span></code></pre>
+        </div>
+
+        <div class="output-section">
+            <h3>دەرئەنجام:</h3>
+            <div class="console-output">
+                <div>> sayHello();</div>
+                <div class="string">سڵاو، جیهان!</div>
+            </div>
+        </div>
+
+        <div class="code-section large-code">
+            <h3>فەنکشن لەگەڵ پارامیتەر:</h3>
+            <pre><code><span class="keyword">function</span> <span class="function">addNumbers</span>(<span class="variable">a</span>, <span class="variable">b</span>) {
+    <span class="keyword">return</span> <span class="variable">a</span> + <span class="variable">b</span>;
+}
+<span class="variable">console</span>.<span class="function">log</span>(<span class="function">addNumbers</span>(<span class="number">2</span>, <span class="number">3</span>)); <span class="comment">// Output: 5</span></code></pre>
+        </div>
+
+        <div class="output-section">
+            <h3>دەرئەنجام:</h3>
+            <div class="console-output">
+                <div>> addNumbers(2, 3);</div>
+                <div class="number">5</div>
+            </div>
+        </div>
+
+        <a href="#functions" class="close-btn">داخستن</a>
+      </div>
+    </section>
+      <a id="functions" class="hidden-close"></a>
+
+
+      <section id="modal-control" class="modal">
+      <div class="modal-content">
+        <h2>کۆنترۆڵ سترەکچەر</h2>
+        <p>کۆنترۆڵ سترەکچەرەکان یارمەتیت دەدەن لە بڕیاردان و دووبارەکردنەوەی کۆد.</p>
+
+        <div class="code-section large-code">
+            <h3>if/else:</h3>
+            <pre><code><span class="keyword">if</span> (<span class="variable">condition</span>) {
+    <span class="comment">// Code to run if condition is true</span>
+} <span class="keyword">else</span> {
+    <span class="comment">// Code to run if condition is false</span>
+}</code></pre>
+        </div>
+
+        <div class="code-section large-code">
+            <h3>for loop:</h3>
+            <pre><code><span class="keyword">for</span> (<span class="keyword">let</span> <span class="variable">i</span> = <span class="number">0</span>; <span class="variable">i</span> < <span class="number">5</span>; <span class="variable">i</span>++) {
+    <span class="variable">console</span>.<span class="function">log</span>(<span class="variable">i</span>);
+}</code></pre>
+        </div>
+
+        <div class="output-section">
+            <h3>دەرئەنجام:</h3>
+            <div class="console-output">
+                <div>0</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+        </div>
+
+        <a href="#control" class="close-btn">داخستن</a>
+      </div>
+    </section>
+      <a id="control" class="hidden-close"></a>
+
+
+      <section id="modal-dom" class="modal">
+        <div class="modal-content">
+            <h2>دەستکاری DOM</h2>
+            <p>دەستکاری DOM ڕێگەت پێدەدات کارلێک و گۆڕانکاری لە پێکهاتەی پەڕەی وێب بکەیت.</p>
+    
+            <div class="code-section large-code">
+                <h3>گۆڕینی ناوەڕۆک:</h3>
+                <pre><code><span class="comment">// گۆڕینی ناوەڕۆکی توخمێک</span>
+    <span class="variable">document</span>.<span class="function">getElementById</span>(<span class="string">"myElement"</span>).<span class="property">innerHTML</span> = <span class="string">"سڵاو، جیهان!"</span>;
+    
+    <span class="comment">// گۆڕینی ستایل</span>
+    <span class="variable">document</span>.<span class="function">querySelector</span>(<span class="string">".myClass"</span>).<span class="property">style</span>.<span class="property">color</span> = <span class="string">"blue"</span>;
+    
+    <span class="comment">// وەرگرتنی ڕووداو</span>
+    <span class="variable">document</span>.<span class="function">getElementById</span>(<span class="string">"myButton"</span>).<span class="function">addEventListener</span>(<span class="string">"click"</span>, <span class="keyword">function</span>() {
+        <span class="function">alert</span>(<span class="string">"دوگمەکە کلیک کرا!"</span>);
+    });</code></pre>
+            </div>
+    
+            <div class="explanation">
+                <h4>میسۆدە باوەکان:</h4>
+                <ul>
+                    <li><code>getElementById()</code> - دۆزینەوەی توخمێک بە ID</li>
+                    <li><code>querySelector()</code> - دۆزینەوەی توخمێک بە CSS selector</li>
+                    <li><code>addEventListener()</code> - زیادکردنی ڕووداو</li>
+                </ul>
+            </div>
+    
+            <div class="notes">
+                <h4>تێبینییەکان:</h4>
+                <ul>
+                    <li>DOM واتە Document Object Model - مۆدێلی پێکهاتەی دۆکیومێنت</li>
+                    <li>هەموو توخمەکانی HTML دەتوانرێت لە ڕێگەی DOM ەوە دەستکاری بکرێن</li>
+                    <li>دەتوانیت توخمەکان زیاد بکەیت، بسڕیتەوە، یان دەستکارییان بکەیت</li>
+                    <li>ستایل و کڵاسەکانیش دەتوانرێت بگۆڕدرێن</li>
+                </ul>
+            </div>
+    
+            <a href="#dom" class="close-btn">داخستن</a>
+        </div>
+    </section>
+    <a id="dom" class="hidden-close"></a>
+    
+    <section id="modal-events" class="modal">
+        <div class="modal-content">
+            <h2>مامەڵەکردن لەگەڵ ڕووداوەکان</h2>
+            <p>مامەڵەکردن لەگەڵ ڕووداوەکان ڕێگەت پێدەدات وەڵامی کارلێکی بەکارهێنەر بدەیتەوە.</p>
+    
+            <div class="code-section large-code">
+                <h3>نموونەی ڕووداوەکان:</h3>
+                <pre><code><span class="comment">// ڕووداوی کلیک</span>
+    <span class="variable">document</span>.<span class="function">getElementById</span>(<span class="string">"myButton"</span>).<span class="function">addEventListener</span>(<span class="string">"click"</span>, <span class="keyword">function</span>() {
+        <span class="function">alert</span>(<span class="string">"دوگمەکە کلیک کرا!"</span>);
+    });
+    
+    <span class="comment">// ڕووداوی گۆڕان</span>
+    <span class="variable">document</span>.<span class="function">querySelector</span>(<span class="string">"input"</span>).<span class="function">addEventListener</span>(<span class="string">"change"</span>, <span class="keyword">function</span>(<span class="variable">event</span>) {
+        <span class="variable">console</span>.<span class="function">log</span>(<span class="string">"نرخی نوێ:"</span>, <span class="variable">event</span>.<span class="property">target</span>.<span class="property">value</span>);
+    });</code></pre>
+            </div>
+    
+            <div class="explanation">
+                <h4>ڕووداوە باوەکان:</h4>
+                <ul>
+                    <li><code>click</code> - کاتێک توخمێک کلیک دەکرێت</li>
+                    <li><code>change</code> - کاتێک نرخی فۆرمێک دەگۆڕدرێت</li>
+                    <li><code>submit</code> - کاتێک فۆرمێک سەبمیت دەکرێت</li>
+                    <li><code>keyup</code> - کاتێک کلیلێک بەردەدرێت</li>
+                    <li><code>mouseover</code> - کاتێک ماوس دێتە سەر توخمێک</li>
+                </ul>
+            </div>
+    
+            <div class="notes">
+                <h4>تێبینییەکان:</h4>
+                <ul>
+                    <li>ڕووداوەکان بەشێکی گرنگن لە وێب دەڤەڵۆپمێنت</li>
+                    <li>دەتوانیت چەندین ڕووداو بۆ یەک توخم زیاد بکەیت</li>
+                    <li>ڕووداوەکان دەتوانن زانیاری زیاتر لەسەر ڕووداوەکە بگەڕێننەوە</li>
+                    <li>دەتوانیت ڕووداوەکان لابەریت بە بەکارهێنانی <code>removeEventListener</code></li>
+                </ul>
+            </div>
+    
+            <a href="#events" class="close-btn">داخستن</a>
+        </div>
+    </section>
+    <a id="events" class="hidden-close"></a>
+    
+
+    <section id="modal-async" class="modal">
+      <div class="modal-content">
+          <h2>جاڤاسکریپتی ناهاوکات</h2>
+          <p>پرۆگرامکردنی ناهاوکات ڕێگەت پێدەدات ئەرکەکان جێبەجێ بکەیت بەبێ بلۆککردنی سەرەکی.</p>
+  
+          <div class="code-section large-code">
+              <h3>setTimeout:</h3>
+              <pre><code><span class="function">setTimeout</span>(<span class="keyword">function</span>() {
+      <span class="variable">console</span>.<span class="function">log</span>(<span class="string">"ئەمە دوای ٢ چرکە جێبەجێ دەبێت"</span>);
+  }, <span class="number">2000</span>);</code></pre>
+          </div>
+  
+          <div class="code-section large-code">
+              <h3>Fetch API:</h3>
+              <pre><code><span class="function">fetch</span>(<span class="string">"https://api.example.com/data"</span>)
+      .<span class="function">then</span>(<span class="variable">response</span> => <span class="variable">response</span>.<span class="function">json</span>())
+      .<span class="function">then</span>(<span class="variable">data</span> => <span class="variable">console</span>.<span class="function">log</span>(<span class="variable">data</span>));</code></pre>
+          </div>
+  
+          <div class="explanation">
+              <h4>تەکنیکە باوەکان:</h4>
+              <ul>
+                  <li><code>setTimeout()</code> - جێبەجێکردنی کۆد دوای ماوەیەکی دیاریکراو</li>
+                  <li><code>fetch()</code> - داواکردنی داتا لە سێرڤەر</li>
+                  <li><code>Promise</code> - بەڵێنی جێبەجێکردنی کۆد لە داهاتوودا</li>
+                  <li><code>async/await</code> - ڕێگایەکی ئاسانتر بۆ مامەڵەکردن لەگەڵ کۆدی ناهاوکات</li>
+              </ul>
+          </div>
+  
+          <div class="notes">
+              <h4>تێبینییەکان:</h4>
+              <ul>
+                  <li>کۆدی ناهاوکات یارمەتیدەرە بۆ باشترکردنی کارایی بەرنامەکە</li>
+                  <li>بەکارهێنانی Promise باشترە لە callback</li>
+                  <li>هەمیشە هەڵەکان بگرە (catch) لە کۆدی ناهاوکات</li>
+                  <li>async/await کۆدەکە خوێندنەوەی ئاسانتر دەکات</li>
+              </ul>
+          </div>
+  
+          <a href="#async" class="close-btn">داخستن</a>
+      </div>
+  </section>
+  <a id="async" class="hidden-close"></a>
+  
+  <section id="modal-objects" class="modal">
+      <div class="modal-content">
+          <h2>ئۆبجێکتەکان</h2>
+          <p>ئۆبجێکتەکان لە جاڤاسکریپت بەکاردێن بۆ خەزنکردنی کۆمەڵێک داتا و شتی ئاڵۆزتر.</p>
+  
+          <div class="code-section large-code">
+              <h3>نموونەی ئۆبجێکت:</h3>
+              <pre><code><span class="keyword">let</span> <span class="variable">کەس</span> = {
+      <span class="property">ناو</span>: <span class="string">"ئازاد"</span>,
+      <span class="property">تەمەن</span>: <span class="number">30</span>,
+      <span class="property">ناویتەواو</span>: <span class="keyword">function</span>() {
+          <span class="keyword">return</span> <span class="keyword">this</span>.<span class="property">ناو</span>;
+      }
+  };
+  
+  <span class="variable">console</span>.<span class="function">log</span>(<span class="variable">کەس</span>.<span class="function">ناویتەواو</span>()); <span class="comment">// ئازاد</span></code></pre>
+          </div>
+  
+          <div class="explanation">
+              <h4>تایبەتمەندییەکانی ئۆبجێکت:</h4>
+              <ul>
+                  <li><code>properties</code> - خاسیەتەکانی ئۆبجێکت (وەک ناو و تەمەن)</li>
+                  <li><code>methods</code> - فەنکشنەکانی ناو ئۆبجێکت</li>
+                  <li><code>this</code> - ئاماژە بۆ ئۆبجێکتی ئێستا</li>
+              </ul>
+          </div>
+  
+          <div class="notes">
+              <h4>تێبینییەکان:</h4>
+              <ul>
+                  <li>ئۆبجێکتەکان گرنگترین بەشی جاڤاسکریپتن</li>
+                  <li>دەتوانیت خاسیەت و میسۆد زیاد و کەم بکەیت</li>
+                  <li>ئۆبجێکتەکان دەتوانن لە یەکتر میرات وەربگرن</li>
+                  <li>JSON فۆرماتێکی تایبەتە بۆ ئۆبجێکتەکان</li>
+              </ul>
+          </div>
+  
+          <a href="#objects" class="close-btn">داخستن</a>
+      </div>
+  </section>
+  <a id="objects" class="hidden-close"></a>
+  
+
+  <section id="modal-arrays" class="modal">
+    <div class="modal-content">
+        <h2>ئەڕەیەکان</h2>
+        <p>ئەڕەیەکان بەکاردێن بۆ خەزنکردنی چەند نرخێک لە یەک گۆڕاودا.</p>
+
+        <div class="code-section large-code">
+            <h3>دروستکردن و دەستگەیشتن:</h3>
+            <pre><code><span class="keyword">let</span> <span class="variable">میوەکان</span> = [<span class="string">"سێو"</span>, <span class="string">"مۆز"</span>, <span class="string">"گێلاس"</span>];
+<span class="variable">console</span>.<span class="function">log</span>(<span class="variable">میوەکان</span>[<span class="number">0</span>]); <span class="comment">// سێو</span></code></pre>
+        </div>
+
+        <div class="code-section large-code">
+            <h3>شێوازەکانی ئەڕەی:</h3>
+            <pre><code><span class="comment">// زیادکردنی بەها</span>
+<span class="variable">میوەکان</span>.<span class="function">push</span>(<span class="string">"پرتەقاڵ"</span>);
+
+<span class="comment">// پیشاندانی هەموو بەهاکان</span>
+<span class="variable">میوەکان</span>.<span class="function">forEach</span>(<span class="variable">میوە</span> => {
+    <span class="variable">console</span>.<span class="function">log</span>(<span class="variable">میوە</span>);
+});</code></pre>
+        </div>
+
+        <div class="explanation">
+            <h4>میسۆدە باوەکان:</h4>
+            <ul>
+                <li><code>push()</code> - زیادکردنی بەها بۆ کۆتایی</li>
+                <li><code>pop()</code> - لابردنی دوا بەها</li>
+                <li><code>forEach()</code> - پیشاندانی هەموو بەهاکان</li>
+                <li><code>map()</code> - گۆڕینی هەموو بەهاکان</li>
+                <li><code>filter()</code> - فلتەرکردنی بەهاکان</li>
+            </ul>
+        </div>
+
+        <div class="notes">
+            <h4>تێبینییەکان:</h4>
+            <ul>
+                <li>ئەڕەیەکان لە ٠ەوە دەست پێدەکەن</li>
+                <li>دەتوانیت هەر جۆرە داتایەک لە ئەڕەی خەزن بکەیت</li>
+                <li>ئەڕەیەکان قەبارەیان دینامیکییە</li>
+                <li>زۆر میسۆدی بەسوود هەیە بۆ مامەڵەکردن لەگەڵ ئەڕەی</li>
+            </ul>
+        </div>
+
+        <a href="#arrays" class="close-btn">داخستن</a>
+    </div>
+</section>
+<a id="arrays" class="hidden-close"></a>
+
+<section id="modal-debugging" class="modal">
+    <div class="modal-content">
+        <h2>هەڵەدۆزینەوە</h2>
+        <p>هەڵەدۆزینەوە پرۆسەی دۆزینەوە و چاککردنی هەڵەکانە لە کۆدەکەتدا.</p>
+
+        <div class="code-section large-code">
+            <h3>تەکنیکەکانی هەڵەدۆزینەوە:</h3>
+            <pre><code><span class="comment">// پەیامی هەڵەدۆزینەوە</span>
+<span class="variable">console</span>.<span class="function">log</span>(<span class="string">"پەیامی هەڵەدۆزینەوە"</span>);
+
+<span class="comment">// وەستانی جێبەجێکردن</span>
+<span class="keyword">debugger</span>;
+
+<span class="comment">// نیشاندانی زانیاری زیاتر</span>
+<span class="variable">console</span>.<span class="function">info</span>(<span class="string">"زانیاری وردەکاری"</span>);
+<span class="variable">console</span>.<span class="function">error</span>(<span class="string">"هەڵەیەک ڕوویدا!"</span>);</code></pre>
+        </div>
+
+        <div class="explanation">
+            <h4>ئامرازەکانی هەڵەدۆزینەوە:</h4>
+            <ul>
+                <li><code>console.log()</code> - پیشاندانی زانیاری</li>
+                <li><code>debugger</code> - وەستانی کۆد</li>
+                <li><code>console.error()</code> - پیشاندانی هەڵە</li>
+                <li><code>try/catch</code> - گرتنی هەڵەکان</li>
+            </ul>
+        </div>
+
+        <div class="notes">
+            <h4>تێبینییەکان:</h4>
+            <ul>
+                <li>هەمیشە هەڵەکان بگرە لە کۆدەکەتدا</li>
+                <li>DevTools یارمەتیدەرێکی باشە بۆ هەڵەدۆزینەوە</li>
+                <li>console.log باشترین هاوڕێی پرۆگرامەرە</li>
+                <li>breakpoints یارمەتیت دەدەن بۆ دۆزینەوەی کێشەکان</li>
+            </ul>
+        </div>
+
+        <a href="#debugging" class="close-btn">داخستن</a>
+    </div>
+</section>
+<a id="debugging" class="hidden-close"></a>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-logo">
+                <span>ڕیگای وێب</span>
+                <i class="fas fa-road"></i>
+            </div>
+            <p class="footer-description">
+                پلاتفۆرمێکی فێرکاری بۆ فێربوونی گەشەپێدانی وێب بە زمانی کوردی، بۆ ئەوەی هەموو کەسێک بتوانێت فێری پرۆگرامینگ ببێت.
+            </p>
+            <div class="social-links">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section" dir="ltr">
+            <h3 class="footer-heading">بەستەرە گرنگەکان</h3>
+            <ul class="footer-links">
+                <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+                <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+                <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section" dir="ltr">
+            <h3 class="footer-heading">پەیوەندی</h3>
+            <ul class="footer-links">
+                <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> کوردستان، عێراق</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>نەخشەی فێربوونی وێب دیزاین ٢٠٢٤. گشت مافەکان پارێزراوە لە لایەن تیمی ئێمە &copy;</p>
+        <nav class="language-selector">
+            <a href="./index.html" class="active">کوردی</a>
+            <a href="./ar/index.html">عەرەبی</a>
+            <a href="./en/index.html">ئینگلیزی</a>
+        </nav>
+    </div>
+</footer>
+</div>
+</body>
+</html>

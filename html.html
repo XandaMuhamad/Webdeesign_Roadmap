@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Roadmap - HTML</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css">
+    <link rel="stylesheet" href="./css/html-styles.css">
+
+</head>
+<body>
+<input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+<div class="content">
+  <header>
+    <div class="container">
+        <div class="logo"><span class="navbar-logo">ڕیگای وێب</span> <i class="fas fa-road"></i></div>
+        <!-- HTML -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="nav-toggle-icon"></span>
+        </label>
+        <nav class="nav-menu-dropdown" aria-label="Main Navigation">
+            <div class="search-container">
+                <input type="search" 
+                       class="search-box" 
+                       placeholder="گەڕان لە ناوەڕۆکەکان..." 
+                       aria-label="Search">
+                <i class="fas fa-search search-icon"></i>
+                
+                <div class="search-results">
+                    <div class="search-result-item">
+                        <i class="fas fa-code"></i>
+                        <span>HTML بنەڕەتەکانی</span>
+                    </div>
+                    <div class="search-result-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>CSS فێربوونی</span>
+                    </div>
+                    <div class="search-result-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript چییە؟</span>
+                    </div>
+                </div>
+            </div>
+
+            <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+            <a href="index.html" class="nav-link ">ماڵەوە <i class="fas fa-home"></i></a>
+            <a href="./html.html" class="nav-link active"> HTML<i class="fas fa-code"></i></a>
+            <a href="./css.html" class="nav-link "> CSS<i class="fas fa-paint-brush"></i></a>
+            <a href="./javascript.html" class="nav-link "> JavaScript<i class="fab fa-js"></i></a>
+            <a href="./about.html" class="nav-link ">دەربارە <i class="fas fa-users"></i></a>
+            
+        </nav>
+    </div>
+</header>
+
+  <main>
+    <section class="html-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">فێربوونی HTML</span>
+                    <div class="code-tag-decoration">&lt;/&gt;</div>
+                </h1>
+
+                <p class="hero-description">
+                    فێری بنەماکانی <span class="highlight">HTML</span> ببە و دەست پێبکە لە 
+                    <span class="typing-container">
+                        <span class="typing-text">
+                            <span class="word">دروستکردنی ماڵپەڕ</span>
+                            <span class="word">پەرەپێدانی وێب</span>
+                            <span class="word">داهێنانی وێب</span>
+                        </span>
+                    </span>
+                </p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>بنەماکانی HTML</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>نموونەی کۆد</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>ڕاهێنانی کرداری</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#start-learning" class="primary-button">
+                        <span class="button-content">دەست پێبکە
+                            <i class="fas fa-arrow-left"></i>
+                        </span>
+                        <div class="button-glow"></div>
+                    </a>
+                    
+                    <a href="#course-outline" class="secondary-button">
+                        <i class="fas fa-list"></i>
+                        <span>ناوەڕۆکی کۆرس</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <div class="editor-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="file-name">index.html</span>
+                    </div>
+                    <div class="editor-content">
+                        <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to HTML&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Learn Structure&lt;/li&gt;
+        &lt;li&gt;Master Tags&lt;/li&gt;
+        &lt;li&gt;Build Pages&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="floating-elements">
+                    <div class="html-tag">&lt;html&gt;</div>
+                    <div class="html-tag">&lt;body&gt;</div>
+                    <div class="html-tag">&lt;div&gt;</div>
+                    <div class="html-tag">&lt;p&gt;</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-background">
+            <div class="gradient-sphere"></div>
+            <div class="grid-overlay"></div>
+            <div class="html-symbols">&lt; /&gt;</div>
+        </div>
+    </section>
+
+    <section class="container roadmap-grid" id="roadmap">
+        <div class="roadmap-card">
+            <a href="#modal-tags">
+                <i class="fas fa-tags"></i>
+                <h3>تاگە بنەڕەتییەکان</h3>
+                <p>فێربە دەربارەی تاگە بنەڕەتییەکانی HTML کە پێکهاتەی ناوەڕۆک لە وێب دروست دەکەن.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-links">
+                <i class="fas fa-link"></i>
+                <h3>بەستەرەکان</h3>
+                <p>فێربە چۆن بەستەر دروست بکەیت بۆ پەیوەندی کردنی لاپەڕەکانی وێب.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-lists">
+                <i class="fas fa-list"></i>
+                <h3>لیستەکان</h3>
+                <p>تێگەیشتن لە چۆنیەتی دروستکردنی لیستی ڕێکخراو و ناڕێکخراو.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-images">
+                <i class="fas fa-image"></i>
+                <h3>وێنەکان</h3>
+                <p>فێربە چۆن وێنە دابنێیت و ستایلی بکەیت لە HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-attributes">
+                <i class="fas fa-asterisk"></i>
+                <h3>تایبەتمەندییەکان</h3>
+                <p>تێگەیشتن لە بەکارهێنانی تایبەتمەندییەکانی HTML بۆ زیادکردنی زانیاری زیاتر بۆ توخمەکان.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-forms">
+                <i class="fas fa-file-alt"></i>
+                <h3>فۆرمەکان</h3>
+                <p>تێگەیشتن لە چۆنیەتی دروستکردنی فۆرم بۆ وەرگرتنی داتا لە بەکارهێنەر لە HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-tables">
+                <i class="fas fa-table"></i>
+                <h3>خشتەکان</h3>
+                <p>فێربە چۆن خشتە دروست بکەیت و ستایلی بکەیت لە HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-media">
+                <i class="fas fa-image"></i>
+                <h3>میدیا</h3>
+                <p>تێگەیشتن لە چۆنیەتی دانانی وێنە، ڤیدیۆ و دەنگ لە HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-semantics">
+                <i class="fas fa-book"></i>
+                <h3>واتاسازی HTML</h3>
+                <p>گرنگی واتاسازی HTML بۆ دەستگەیشتن و SEO تاوتوێ بکە.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="modal-tags" class="modal">
+      <div class="modal-content">
+        <h2>تاگە بنەڕەتییەکانی HTML</h2>
+        <p>تاگەکانی HTML بەکاردێن بۆ پێکهاتەی ناوەڕۆک لە وێب. هەندێک لە تاگە گرنگەکان:</p>
+        <ul>
+          <li><code>&lt;h1&gt; تا &lt;h6&gt;</code> – سەردێڕەکان، کە <code>&lt;h1&gt;</code> بەرزترین ئاستە.</li>
+          <li><code>&lt;p&gt;</code> – تاگی پەرەگراف بۆ دەقی ناوەڕۆک.</li>
+          <li><code>&lt;a&gt;</code> – تاگی لەنگەر بۆ دروستکردنی بەستەر.</li>
+          <li><code>&lt;img&gt;</code> – تاگی وێنە بۆ دانانی وێنەکان.</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="tag">&lt;h1&gt;</span>سەردێڕی سەرەکی<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span>سەردێڕی لاوەکی<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;p&gt;</span>ئەمە پەرەگرافێکە.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="string">"https://example.com"</span><span class="tag">&gt;</span>بەستەر<span class="tag">&lt;/a&gt;</span></code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <h1 style="font-size: 24px;">سەردێڕی سەرەکی</h1>
+          <h2 style="font-size: 20px;">سەردێڕی لاوەکی</h2>
+          <p>ئەمە پەرەگرافێکە.</p>
+          <a href="#" style="color: blue; text-decoration: underline;">بەستەر</a>
+        </div>
+
+        <a href="#tags" class="close-btn">داخستن</a>
+      </div>
+    </section>
+
+    <a id="tags" class="hidden-close"></a>
+
+    <section id="modal-forms" class="modal">
+      <div class="modal-content">
+        <h2>فۆرمەکانی HTML</h2>
+        <p>فۆرمەکانی HTML بەکاردێن بۆ کۆکردنەوەی داخڵکراوەکانی بەکارهێنەر و ناردنی داتا بۆ ڕاژە. توخمە گرنگەکانی فۆرم ئەمانەن:</p>
+        <ul>
+          <li><code>&lt;input&gt;</code> – بەکاردێت بۆ جۆرەکانی داخڵکردن وەک دەق، وشەی نهێنی، ئیمەیڵ و هتد.</li>
+          <li><code>&lt;textarea&gt;</code> – ڕێگە دەدات بە داخڵکردنی دەقی فرە-هێڵ.</li>
+          <li><code>&lt;button&gt;</code> – بەکاردێت بۆ ناردنی فۆرمەکان.</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="tag">&lt;form&gt;</span>
+  <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="string">"name"</span><span class="tag">&gt;</span>ناو:<span class="tag">&lt;/label&gt;</span>
+  <span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"name"</span> <span class="attr">name</span>=<span class="string">"name"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;textarea</span> <span class="attr">id</span>=<span class="string">"message"</span> <span class="attr">name</span>=<span class="string">"message"</span><span class="tag">&gt;</span><span class="tag">&lt;/textarea&gt;</span>
+  <span class="tag">&lt;button</span> <span class="attr">type</span>=<span class="string">"submit"</span><span class="tag">&gt;</span>ناردن<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/form&gt;</span></code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <form style="display: flex; flex-direction: column; gap: 10px; max-width: 300px;">
+            <label for="demo-name">ناو:</label>
+            <input type="text" id="demo-name" name="demo-name">
+            <textarea id="demo-message" name="demo-message" rows="3"></textarea>
+            <button type="button" style="width: fit-content;">ناردن</button>
+          </form>
+        </div>
+
+        <a href="#forms" class="close-btn">داخستن</a>
+      </div>
+    </section>
+
+    <a id="forms" class="hidden-close"></a>
+
+    <section id="modal-semantics" class="modal">
+      <div class="modal-content">
+        <h2>واتاسازی HTML</h2>
+        <p>HTML ی واتایی تاگەکان بەکاردێنێت کە واتایان هەیە و یارمەتی پێکهاتەی ناوەڕۆک دەدەن بە شێوەیەکی کاریگەرتر. تاگە واتاییە سەرەکییەکان:</p>
+        <ul>
+          <li><code>&lt;header&gt;</code> – نوێنەرایەتی ناوەڕۆکی سەرەتایی یان کۆمەڵێک بەستەری ڕێنیشاندەر دەکات.</li>
+          <li><code>&lt;article&gt;</code> – پێکهاتەیەکی سەربەخۆیە لە پەڕەی وێب.</li>
+          <li><code>&lt;footer&gt;</code> – نوێنەرایەتی پێپەڕەی بەش یان لاپەڕە دەکات.</li>
+          <li><code>&lt;section&gt;</code> – نوێنەرایەتی گروپێکی بابەتی ناوەڕۆک دەکات.</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="tag">&lt;header&gt;</span>
+  <span class="tag">&lt;h1&gt;</span>بەخێربێیت بۆ ماڵپەڕەکەم<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;/header&gt;</span>
+
+<span class="tag">&lt;article&gt;</span>
+  <span class="tag">&lt;h2&gt;</span>ناونیشانی وتار<span class="tag">&lt;/h2&gt;</span>
+  <span class="tag">&lt;p&gt;</span>ئەمە وتارێکە.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/article&gt;</span>
+
+<span class="tag">&lt;footer&gt;</span>
+  <span class="tag">&lt;p&gt;</span>© ٢٠٢٤ ماڵپەڕەکەم<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/footer&gt;</span></code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <div style="border: 1px solid #ddd; padding: 20px; margin: 10px;">
+            <header style="background-color: #f5f5f5; padding: 10px;">
+              <h1 style="font-size: 24px; margin: 0;">بەخێربێیت بۆ ماڵپەڕەکەم</h1>
+            </header>
+
+            <article style="padding: 20px; margin: 10px 0; background-color: #fff;">
+              <h2 style="font-size: 20px;">ناونیشانی وتار</h2>
+              <p>ئەمە وتارێکە.</p>
+            </article>
+
+            <footer style="background-color: #f5f5f5; padding: 10px; text-align: center;">
+              <p style="margin: 0;">© ٢٠٢٤ ماڵپەڕەکەم</p>
+            </footer>
+          </div>
+        </div>
+
+        <a href="#semantics" class="close-btn">داخستن</a>
+      </div>
+    </section>
+
+    <a id="semantics" class="hidden-close"></a>
+
+    <section id="modal-tables" class="modal">
+      <div class="modal-content">
+        <h2>خشتەکانی HTML</h2>
+        <p>خشتەکانی HTML بەکاردێن بۆ پیشاندانی داتای خشتەیی. توخمە سەرەکییەکان:</p>
+        <ul>
+          <li><code>&lt;table&gt;</code> – خشتە پێناسە دەکات.</li>
+          <li><code>&lt;tr&gt;</code> – ڕیزی خشتە پێناسە دەکات.</li>
+          <li><code>&lt;td&gt;</code> – خانەی خشتە پێناسە دەکات.</li>
+          <li><code>&lt;th&gt;</code> – خانەی سەرەوەی خشتە پێناسە دەکات.</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="tag">&lt;table&gt;</span>
+  <span class="tag">&lt;tr&gt;</span>
+    <span class="tag">&lt;th&gt;</span>ناو<span class="tag">&lt;/th&gt;</span>
+    <span class="tag">&lt;th&gt;</span>تەمەن<span class="tag">&lt;/th&gt;</span>
+  <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;tr&gt;</span>
+    <span class="tag">&lt;td&gt;</span>ئازاد<span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;td&gt;</span>٣٠<span class="tag">&lt;/td&gt;</span>
+  <span class="tag">&lt;/tr&gt;</span>
+<span class="tag">&lt;/table&gt;</span></code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+            <tr>
+              <th style="border: 1px solid #ddd; padding: 8px; background-color: #f5f5f5;">ناو</th>
+              <th style="border: 1px solid #ddd; padding: 8px; background-color: #f5f5f5;">تەمەن</th>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 8px;">ئازاد</td>
+              <td style="border: 1px solid #ddd; padding: 8px;">٣٠</td>
+            </tr>
+          </table>
+        </div>
+
+        <a href="#tables" class="close-btn">داخستن</a>
+      </div>
+    </section>
+
+    <a id="tables" class="hidden-close"></a>
+
+    <section id="modal-media" class="modal">
+      <div class="modal-content">
+        <h2>میدیای HTML</h2>
+        <p>HTML ڕێگە دەدات بە تێخستنی جۆرەها میدیا، وەک وێنە، ڤیدیۆ و دەنگ. توخمە سەرکییەکان:</p>
+        <ul>
+          <li><code>&lt;img&gt;</code> – وێنە تێدەخات.</li>
+          <li><code>&lt;video&gt;</code> – ڤیدیۆ تێدەخات.</li>
+          <li><code>&lt;audio&gt;</code> – فایلی دەنگ�� تێدەخات.</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="string">"image.jpg"</span> <span class="attr">alt</span>=<span class="string">"وەسف"</span>
+  <span class="attr">width</span>=<span class="string">"300"</span><span class="tag">&gt;</span>
+
+<span class="tag">&lt;video</span> <span class="attr">controls</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;source</span> <span class="attr">src</span>=<span class="string">"video.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span><span class="tag">&gt;</span>
+  وێبگەڕەکەت پشتگیری تاگی ڤیدیۆ ناکات.
+<span class="tag">&lt;/video&gt;</span>
+
+<span class="tag">&lt;audio</span> <span class="attr">controls</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;source</span> <span class="attr">src</span>=<span class="string">"audio.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span><span class="tag">&gt;</span>
+  وێبگەڕەکەت پشتگیری توخمی دەنگ ناکات.
+<span class="tag">&lt;/audio&gt;</span></code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <!-- Image Section -->
+          <div class="media-container">
+            <img 
+              src="./assets/image.jpg" 
+              alt="وێنەی نموونە" 
+              style="
+                max-width: 300px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                margin: 15px 0;
+                transition: transform 0.3s ease;
+              "
+              onmouseover="this.style.transform='scale(1.02)'"
+              onmouseout="this.style.transform='scale(1)'"
+            >
+          </div>
+
+          <!-- Video Section -->
+          <div class="media-container" style="margin: 25px 0;">
+            <video 
+              controls
+              style="
+                max-width: 300px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                background-color: #f5f5f5;
+              "
+            >
+              <source src="./assets/video.mp4" type="video/mp4">
+              وێبگەڕەکەت پشتگیری تاگی ڤیدیۆ ناکات.
+            </video>
+          </div>
+
+          <!-- Audio Section -->
+          <div class="media-container" style="
+            background: linear-gradient(145deg, #f6f6f6, #ffffff);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            margin: 20px 0;
+            max-width: 300px;
+          ">
+            <audio 
+              controls
+              style="
+                width: 100%;
+                height: 40px;
+                opacity: 0.85;
+              "
+            >
+              <source src="./assets/audio.mp3" type="audio/mpeg">
+              وێبگەڕەکەت پشتگیری توخمی دەنگ ناکات.
+            </audio>
+          </div>
+
+          <!-- Note Section -->
+          <div style="
+            background-color: #f8f9fa;
+            border-right: 4px solid #6c757d;
+            padding: 10px 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+          ">
+            <p style="
+              color: #666;
+              font-size: 0.9em;
+              margin: 0;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            ">
+              <span style="
+                font-weight: bold;
+                color: #495057;
+              ">📝 تێبینی:</span>
+              ئەم نموونانە تەنها بۆ پیشاندانن
+            </p>
+          </div>
+        </div>
+
+        <a href="#media" class="close-btn">داخستن</a>
+      </div>
+    </section>
+
+    <a id="media" class="hidden-close"></a>
+
+    <section id="modal-links" class="modal">
+      <div class="modal-content">
+        <h2>بەستەرەکان</h2>
+        <p>بەستەرەکان بە بەکارهێنانی تاگی <code>&lt;a&gt;</code> دروست دەکرێن. ڕێگەت پێدەدەن بەستەر بۆ پەڕەی وێب یان سەرچاوەکانی تر دروست بکەیت.</p>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="string">"https://example.com"</span><span class="tag">&gt;</span>سەردانی نموونە بکە<span class="tag">&lt;/a&gt;</span></code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <a href="#" style="color: blue; text-decoration: underline;">سەردانی نموونە بکە</a>
+        </div>
+
+        <a href="#links" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="links" class="hidden-close"></a>
+
+    <section id="modal-lists" class="modal">
+      <div class="modal-content">
+        <h2>لیستەکان</h2>
+        <p>HTML دوو جۆر لیست دابین دەکات: لیستی ڕێکخراو (<code>&lt;ol&gt;</code>) و لیستی ناڕێکخراو (<code>&lt;ul&gt;</code>).</p>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="tag">&lt;ul&gt;</span>
+  <span class="tag">&lt;li&gt;</span>بڕگەی ١<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>بڕگەی ٢<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="tag">&lt;ol&gt;</span>
+  <span class="tag">&lt;li&gt;</span>بڕگەی یەکەم<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>بڕگەی دووەم<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span></code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <div style="margin: 10px 0;">
+            <ul style="margin: 10px 0;">
+              <li>بڕگەی ١</li>
+              <li>بڕگەی ٢</li>
+            </ul>
+
+            <ol style="margin: 10px 0;">
+              <li>بڕگەی یەکەم</li>
+              <li>بڕگەی دووەم</li>
+            </ol>
+          </div>
+        </div>
+
+        <a href="#lists" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="lists" class="hidden-close"></a>
+
+    <section id="modal-images" class="modal">
+      <div class="modal-content">
+        <h2>وێنەکان</h2>
+        <p>وێنەکان دەکرێت بە بەکارهێنانی تاگی <code>&lt;img&gt;</code> تێبخرێن. هەروەها دەتوانیت تایبەتمەندی وەک <code>alt</code> بۆ دەستگەیشتن زیاد بکەیت.</p>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="tag">&lt;img</span> 
+  <span class="attr">src</span>=<span class="string">"image.jpg"</span> 
+  <span class="attr">alt</span>=<span class="string">"وەسف"</span>
+  <span class="attr">width</span>=<span class="string">"300"</span><span class="tag">&gt;</span></code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <img 
+            src="./assets/image.jpg" 
+            alt="وێنەی نموونە" 
+            style="max-width: 300px; border: 1px solid #ddd; padding: 5px;"
+          >
+          <p style="color: #666; font-size: 0.9em;">تێبینی: ئەم وێنەیە تەنها نموونەیە</p>
+        </div>
+
+        <a href="#images" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="images" class="hidden-close"></a>
+
+    <section id="modal-attributes" class="modal">
+      <div class="modal-content">
+        <h2>تایبەتمەندییەکان</h2>
+        <p>تایبەتمەندییەکان زانیاری زیاتر دەربارەی توخمەکانی HTML دابین دەکەن. تایبەتمەندییە باوەکان <code>id</code>، <code>class</code>، و <code>style</code> لەخۆدەگرن.</p>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="tag">&lt;div</span> 
+  <span class="attr">id</span>=<span class="string">"ناسنامەی_تایبەت"</span> 
+  <span class="attr">class</span>=<span class="string">"ناوی_پۆل"</span> 
+  <span class="attr">style</span>=<span class="string">"color: red; padding: 10px; border: 1px solid #ddd;"</span>
+<span class="tag">&gt;</span>
+  ناوەڕۆک
+<span class="tag">&lt;/div&gt;</span></code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <div 
+            id="demo_special_id" 
+            class="demo_class" 
+            style="
+              color: red; 
+              padding: 10px; 
+              border: 1px solid #ddd;
+              margin: 10px 0;
+              background-color: #f9f9f9;
+            "
+          >
+            ناوەڕۆک
+          </div>
+          <div style="font-size: 0.9em; color: #666;">
+            <p>تێبینی:</p>
+            <ul style="margin: 5px 20px;">
+              <li>id: ناسنامەیەکی تایبەت بۆ توخمەکە</li>
+              <li>class: پۆلێک بۆ شێوازدان</li>
+              <li>style: شێوازی ڕاستەوخۆ</li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#attributes" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="attributes" class="hidden-close"></a>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-logo">
+                <span>ڕیگای وێب</span>
+                <i class="fas fa-road"></i>
+            </div>
+            <p class="footer-description">
+                پلاتفۆرمێکی فێرکاری بۆ فێربوونی گەشەپێدانی وێب بە زمانی کوردی، بۆ ئەوەی هەموو کەسێک بتوانێت فێری پرۆگرامینگ ببێت.
+            </p>
+            <div class="social-links">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section" dir="ltr">
+          <h3 class="footer-heading">بەستەرە گرنگەکان</h3>
+          <ul class="footer-links">
+              <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+              <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+              <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-section" dir="ltr">
+          <h3 class="footer-heading">پەیوەندی</h3>
+          <ul class="footer-links">
+              <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+              <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i> کوردستان، عێراق</a></li>
+          </ul>
+      </div>
+  </div>
+
+  
+    <div class="footer-bottom">
+        <p>نەخشەی فێربوونی وێب دیزاین ٢٠٢٤. گشت مافەکان پارێزراوە لە لایەن تیمی ئێمە &copy;</p>
+        <nav class="language-selector">
+            <a href="./index.html" class="active">کوردی</a>
+            <a href="./ar/index.html">عەرەبی</a>
+            <a href="./en/index.html">ئینگلیزی</a>
+        </nav>
+    </div>
+</footer>
+</div>
+</body>
+</html>

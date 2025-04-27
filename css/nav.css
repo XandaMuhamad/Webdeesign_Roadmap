@@ -1,0 +1,318 @@
+@import "vars.css";
+
+header {
+    background: rgba(var(--secondary-bg-rgb), 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem var(--spacing-medium);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    padding: 0.5rem var(--spacing-medium);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+header .logo i {
+    transition: transform 0.3s ease;
+}
+
+header .logo:hover i {
+    transform: translateX(5px) rotate(15deg);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav .nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav .nav-link i {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+nav .nav-link:hover i {
+    transform: translateY(-2px);
+}
+
+nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent,
+        var(--accent-color),
+        transparent
+    );
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav .nav-link:hover::before,
+nav .nav-link.active::before {
+    transform: scaleX(1);
+}
+
+.search-container {
+    position: relative;
+    min-width: 250px;
+}
+
+.search-box {
+    width: 100%;
+    padding: 0.7rem 2.8rem;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background: rgba(var(--bg-color-rgb), 0.1);
+    color: var(--text-color);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.search-box:focus {
+    border-color: var(--accent-color);
+    background: rgba(var(--bg-color-rgb), 0.2);
+    box-shadow: 0 0 0 4px rgba(var(--accent-color-rgb), 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-color);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.search-results {
+    position: absolute;
+    top: calc(100% + 0.8rem);
+    left: 0;
+    right: 0;
+    background: rgba(var(--bg-color-rgb), 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(var(--accent-color-rgb), 0.1);
+    padding: 0.5rem;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.search-box:focus ~ .search-results {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.search-result-item {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.search-result-item:hover {
+    background: rgba(var(--accent-color-rgb), 0.1);
+    transform: translateX(5px);
+}
+
+.search-result-item i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.dark-mode-label {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: rgba(var(--accent-color-rgb), 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hide checkbox but keep it accessible */
+.nav-toggle {
+    display: none;
+}
+
+/* Updated Navigation Toggle Styles */
+.nav-toggle-label {
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--accent-color-rgb), 0.1);
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.nav-toggle-icon {
+    position: relative;
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: all 0.3s ease;
+    right: 0;
+}
+
+.nav-toggle-icon::before {
+    transform: translateY(-8px);
+}
+
+.nav-toggle-icon::after {
+    transform: translateY(8px);
+}
+
+/* Animation for the hamburger menu */
+.nav-toggle:checked + .nav-toggle-label .nav-toggle-icon {
+    background-color: transparent;
+}
+
+.nav-toggle:checked + .nav-toggle-label .nav-toggle-icon::before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.nav-toggle:checked + .nav-toggle-label .nav-toggle-icon::after {
+    transform: translateY(0) rotate(-45deg);
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: flex;
+        z-index: 999;
+    }
+
+    .nav-menu-dropdown {
+        position: fixed;
+        top: 80px;
+        right: 1rem;
+        left: 1rem;
+        background: rgba(var(--bg-color-rgb), 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(var(--accent-color-rgb), 0.1);
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-toggle:checked ~ .nav-menu-dropdown {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    nav .nav-link {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 8px;
+        justify-content: space-between;
+    }
+
+    nav .nav-link:hover {
+        background: rgba(var(--accent-color-rgb), 0.1);
+    }
+
+    .search-container {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    /* Ensure the header stays on top */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    /* Add padding to body to prevent content from hiding under fixed header */
+    body {
+        padding-top: 80px;
+    }
+}
+
+/* Additional RTL-specific adjustments */
+[lang="ku"] .nav-toggle-label,
+[lang="ar"] .nav-toggle-label {
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+[lang="ku"] .nav-toggle-icon::before,
+[lang="ku"] .nav-toggle-icon::after,
+[lang="ar"] .nav-toggle-icon::before,
+[lang="ar"] .nav-toggle-icon::after {
+    left: 0;
+    right: auto;
+}

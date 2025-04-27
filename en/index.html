@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Roadmap - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/mediaQuery.css">
+</head>
+
+<body>
+
+<input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+
+<div class="content">
+    <header>
+        <div class="container">
+            <div class="logo"><span class="navbar-logo"> RegayWeb </span> <i class="fas fa-road"></i></div>
+            <!-- HTML -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span class="nav-toggle-icon"></span>
+            </label>
+            <nav class="nav-menu-dropdown" aria-label="Main Navigation">
+                <div class="search-container">
+                    <input type="search" 
+                           class="search-box" 
+                           placeholder="Search content..." 
+                           aria-label="Search">
+                    <i class="fas fa-search search-icon"></i>
+                    
+                    <div class="search-results">
+                        <div class="search-result-item">
+                            <i class="fas fa-code"></i>
+                            <span>HTML Basics</span>
+                        </div>
+                        <div class="search-result-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Learn CSS</span>
+                        </div>
+                        <div class="search-result-item">
+                            <i class="fab fa-js"></i>
+                            <span>What is JavaScript?</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+                <a href="index.html" class="nav-link active">Home <i class="fas fa-home"></i></a>
+                <a href="./html.html" class="nav-link">HTML <i class="fas fa-code"></i></a>
+                <a href="./css.html" class="nav-link">CSS <i class="fas fa-paint-brush"></i></a>
+                <a href="./javascript.html" class="nav-link">JavaScript <i class="fab fa-js"></i></a>
+                <a href="./about.html" class="nav-link ">About <i class="fas fa-users"></i></a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        Available for Learning 24/7
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Learn Web Development</span>
+                        <div class="hero-title-decoration">
+                            <svg class="squiggle" viewBox="0 0 100 20">
+                                <path d="M0,10 Q25,0 50,10 T100,10" stroke="var(--accent-color)" fill="none"/>
+                            </svg>
+                        </div>
+                    </h1>
+
+                    <p class="hero-description">
+                        A special journey to learn
+                        <span class="typing-text">
+                            <span class="word">HTML</span>
+                            <span class="word">CSS</span>
+                            <span class="word">JavaScript</span>
+                        </span>
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#roadmap" class="primary-button">
+                            <span class="button-content">Start Now</span>
+                            <span class="button-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                            <div class="button-particles"></div>
+                        </a>
+                        
+                        <a href="#demo" class="secondary-button">
+                            <i class="fas fa-play"></i>
+                            <span>Watch Demo</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Learners</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Lessons</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-preview">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="code-title">example.html</div>
+                        </div>
+                        <pre class="code-content">
+<code><span class="code-line"><span class="code-keyword">&lt;div</span> <span class="code-attr">class</span>=<span class="code-string">"container"</span><span class="code-keyword">&gt;</span></span>
+<span class="code-line">  <span class="code-keyword">&lt;h1&gt;</span>Hello World<span class="code-keyword">&lt;/h1&gt;</span></span>
+<span class="code-line">  <span class="code-keyword">&lt;p&gt;</span>Welcome to Web Development<span class="code-keyword">&lt;/p&gt;</span></span>
+<span class="code-line"><span class="code-keyword">&lt;/div&gt;</span></span></code>
+                        </pre>
+                    </div>
+                    
+                    <div class="floating-elements">
+                        <div class="tech-bubble html">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="tech-bubble css">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="tech-bubble js">
+                            <i class="fab fa-js"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-background">
+                <div class="gradient-sphere"></div>
+                <div class="grid-overlay"></div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="roadmap-grid container">
+            <a href="html.html"><article class="roadmap-card">
+                <i class="fas fa-code"></i>
+                <h3>HTML</h3>
+                <p>Learn the basics of HTML to structure your web content.</p>
+            </article></a>
+            <a href="css.html">
+                <article class="roadmap-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>CSS</h3>
+                <p>Style your web pages with CSS to make them visually appealing.</p>
+            </article>
+            </a>
+            <a href="javascript.html">
+                <article class="roadmap-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Make your websites dynamic and modern with JavaScript.</p>
+            </article>
+            </a>
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonials-heading">
+                <h2>What Our Learners Say?</h2>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-profile">
+                        <img src="../assets/images/jhon.jpg" alt="John">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Just by using RegayWeb, I learned the fundamentals of HTML, CSS, and JavaScript. I 100% recommend it to my friends!"</p>
+                        <div class="testimonial-author">
+                            <span>John</span>
+                            <div class="role">Developer . London</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="testimonial-card">
+                    <div class="testimonial-profile">
+                        <img src="../assets/images/jhon.jpg" alt="David">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Coming from a design background, I needed a resource that would help me understand web development from a visual perspective. RegayWeb's approach to teaching CSS and JavaScript made the transition incredibly smooth. I've now expanded my skillset and work as a UI Developer at a digital agency."</p>
+                        <div class="testimonial-author">
+                            <span>David</span>
+                            <div class="role">UI Developer . Bristol</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="testimonial-card">
+                    <div class="testimonial-profile">
+                        <img src="../assets/images/sarah.jpg" alt="Emma">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"As a UX researcher transitioning into frontend development, I needed a comprehensive learning platform. RegayWeb's step-by-step approach and interactive exercises made learning to code enjoyable. Within six months, I was able to build full websites and landed my first role as a frontend developer!"</p>
+                        <div class="testimonial-author">
+                            <span>Emma</span>
+                            <div class="role">Frontend Developer . Edinburgh</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="cta">
+            <!-- Animated Background -->
+            <div class="animated-bg">
+                <div class="gradient-sphere"></div>
+                <div class="particles"></div>
+            </div>
+
+            <div class="cta-wrapper container">
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                    <span class="progress-text">70% of Students Succeed</span>
+                </div>
+
+                <div class="cta-content">
+                    <div class="badge-container">
+                        <div class="badge primary">
+                            <span class="pulse"></span>
+                            <span class="badge-text">24/7 Support</span>
+                        </div>
+                        <div class="badge secondary">
+                            <i class="fas fa-rocket"></i>
+                            <span class="badge-text">Learn Fast</span>
+                        </div>
+                    </div>
+                    
+                    <h2 class="glowing-text">Start Your Journey Now!</h2>
+                    <p class="fade-in">Learn more about web languages and enhance your skills.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item" data-tilt>
+                            <div class="feature-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span>HTML, CSS, JS</span>
+                            <div class="feature-tooltip">The Three Core Web Languages</div>
+                        </div>
+                        <div class="feature-item" data-tilt>
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                                <div class="count-animation">1000+</div>
+                            </div>
+                            <span>Learners</span>
+                        </div>
+                        <div class="feature-item" data-tilt>
+                            <div class="feature-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <span>Tutorial Videos</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="#roadmap" class="cta-btn primary">
+                            <span class="btn-content">
+                                <span class="btn-text">Explore Learning Path</span>
+                                <span class="btn-icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </span>
+                            <span class="btn-particles"></span>
+                        </a>
+                        <a href="#demo" class="cta-btn secondary">
+                            <i class="fas fa-play"></i>
+                            <span>Watch Demo</span>
+                        </a>
+                    </div>
+
+                    <!-- Achievement Cards -->
+                    <div class="achievements">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🎯</div>
+                            <div class="achievement-stats">
+                                <div class="counter">95%</div>
+                                <span>Success Rate</span>
+                            </div>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">⭐</div>
+                            <div class="achievement-stats">
+                                <div class="counter">4.8</div>
+                                <span>Rating</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scroll-indicator">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <div class="arrows">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Elements -->
+                <div class="floating-elements">
+                    <div class="code-editor">
+                        <div class="editor-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="editor-content">
+                            <pre><code class="language-javascript">
+// Your Web Journey
+const developer = {
+    name: "You",
+    level: "Beginner",
+    goals: [
+        "Learn HTML",
+        "Master CSS",
+        "Build with JS"
+    ],
+    progress: {
+        current: "Learning",
+        nextStep: "Success"
+    }
+};</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-orbit">
+                        <div class="orbit-circle"></div>
+                        <div class="tech-item" style="--delay: 0s"><i class="fab fa-html5"></i></div>
+                        <div class="tech-item" style="--delay: 2s"><i class="fab fa-css3-alt"></i></div>
+                        <div class="tech-item" style="--delay: 4s"><i class="fab fa-js"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <span>Web Path</span>
+                    <i class="fas fa-road"></i>
+                </div>
+                <p class="footer-description">
+                    An educational platform for web development in English, enabling everyone to learn programming.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Important Links</h3>
+                <ul class="footer-links">
+                    <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+                    <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+                    <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                    <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Iraq, Kurdistan</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Web Development Roadmap 2024. All rights reserved by our team &copy;</p>
+            <nav class="language-selector">
+                <a href="../index.html">Kurdish</a>
+                <a href="../ar/index.html">Arabic</a>
+                <a href="./index.html" class="active">English</a>
+            </nav>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

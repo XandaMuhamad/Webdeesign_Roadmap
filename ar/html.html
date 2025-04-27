@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خارطة طريق HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/mediaQuery.css">
+    <link rel="stylesheet" href="../css/html-styles.css">
+</head>
+<body>
+<input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+<div class="content">
+    <header>
+        <div class="container">
+            <div class="logo"><span class="navbar-logo">طريق الويب</span> <i class="fas fa-road"></i></div>
+            <!-- HTML -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span class="nav-toggle-icon"></span>
+            </label>
+            <nav class="nav-menu-dropdown" aria-label="التنقل الرئيسي">
+                <div class="search-container">
+                    <input type="search" 
+                           class="search-box" 
+                           placeholder="ابحث في المحتوى..." 
+                           aria-label="بحث">
+                    <i class="fas fa-search search-icon"></i>
+                    
+                    <div class="search-results">
+                        <div class="search-result-item">
+                            <i class="fas fa-code"></i>
+                            <span>أساسيات HTML</span>
+                        </div>
+                        <div class="search-result-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>تعلم CSS</span>
+                        </div>
+                        <div class="search-result-item">
+                            <i class="fab fa-js"></i>
+                            <span>ما هو JavaScript؟</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+                <a href="index.html" class="nav-link ">الرئيسية <i class="fas fa-home"></i></a>
+                <a href="./html.html" class="nav-link active">HTML <i class="fas fa-code"></i></a>
+                <a href="./css.html" class="nav-link">CSS <i class="fas fa-paint-brush"></i></a>
+                <a href="./javascript.html" class="nav-link">JavaScript <i class="fab fa-js"></i></a>
+                <a href="./about.html" class="nav-link ">من نحن <i class="fas fa-users"></i></a>
+                
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <section class="html-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">تعلم HTML</span>
+                    <div class="code-tag-decoration">&lt;/&gt;</div>
+                </h1>
+
+                <p class="hero-description">
+                    تعلم أساسيات <span class="highlight">HTML</span> وابدأ في 
+                    <span class="typing-container">
+                        <span class="typing-text">
+                            <span class="word">إنشاء المواقع</span>
+                            <span class="word">تطوير الويب</span>
+                            <span class="word">برمجة الويب</span>
+                        </span>
+                    </span>
+                </p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>أساسيات HTML</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>أمثلة برمجية</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>تدريب عملي</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#start-learning" class="primary-button">
+                        <span class="button-content">ابدأ الآن
+                            <i class="fas fa-arrow-left"></i>
+                        </span>
+                        <div class="button-glow"></div>
+                    </a>
+                    
+                    <a href="#course-outline" class="secondary-button">
+                        <i class="fas fa-list"></i>
+                        <span>محتوى الدورة</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <div class="editor-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="file-name">index.html</span>
+                    </div>
+                    <div class="editor-content">
+                        <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to HTML&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Learn Structure&lt;/li&gt;
+        &lt;li&gt;Master Tags&lt;/li&gt;
+        &lt;li&gt;Build Pages&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="floating-elements">
+                    <div class="html-tag">&lt;html&gt;</div>
+                    <div class="html-tag">&lt;body&gt;</div>
+                    <div class="html-tag">&lt;div&gt;</div>
+                    <div class="html-tag">&lt;p&gt;</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-background">
+            <div class="gradient-sphere"></div>
+            <div class="grid-overlay"></div>
+            <div class="html-symbols">&lt; /&gt;</div>
+        </div>
+    </section>
+
+    <section class="container roadmap-grid">
+        <div class="roadmap-card">
+            <a href="#modal-tags">
+                <i class="fas fa-tags"></i>
+                <h3>العلامات الأساسية</h3>
+                <p>تعلم عن العلامات الأساسية في HTML التي تنظم محتوى الويب.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-links">
+                <i class="fas fa-link"></i>
+                <h3>الروابط</h3>
+                <p>تعلم كيفية إنشاء الروابط لربط صفحات الويب.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-lists">
+                <i class="fas fa-list"></i>
+                <h3>القوائم</h3>
+                <p>فهم كيفية إنشاء القوائم المرتبة وغير المرتبة.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-images">
+                <i class="fas fa-image"></i>
+                <h3>الصور</h3>
+                <p>تعلم كيفية تضمين وتنسيق الصور في HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-attributes">
+                <i class="fas fa-asterisk"></i>
+                <h3>السمات</h3>
+                <p>فهم استخدام سمات HTML لإضافة معلومات إضافية إلى العناصر.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-forms">
+                <i class="fas fa-file-alt"></i>
+                <h3>النماذج</h3>
+                <p>فهم كيفية إنشاء النماذج لجمع مدخلات المستخدم في HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-tables">
+                <i class="fas fa-table"></i>
+                <h3>الجداول</h3>
+                <p>تعلم كيفية إنشاء وتنسيق الجداول في HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-media">
+                <i class="fas fa-image"></i>
+                <h3>الوسائط</h3>
+                <p>فهم كيفية تضمين الصور والفيديوهات والصوت في HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="#modal-semantics">
+                <i class="fas fa-book"></i>
+                <h3>دلالات HTML</h3>
+                <p>استكشاف أهمية HTML الدلالية لتحسين الوصول وتحسين محركات البحث.</p>
+            </a>
+        </div>
+
+    </section>
+
+    <section id="modal-tags" class="modal">
+        <div class="modal-content">
+            <h2>العلامات الأساسية في HTML</h2>
+            <p>تُستخدم علامات HTML لتنظيم محتوى الويب. بعض العلامات الأساسية تشمل:</p>
+            <ul>
+                <li>&lt;h1&gt;هذا عنوان&lt;/h1&gt;</li>
+                <li>&lt;p&gt;هذه فقرة.&lt;/p&gt;</li>
+                <li>&lt;a href="https://example.com"&gt;هذا رابط&lt;/a&gt;</li>
+                <li>&lt;img src="image.jpg" alt="وصف"&gt;</li>
+            </ul>
+            <pre>
+&lt;h1&gt;هذا عنوان&lt;/h1&gt;
+&lt;p&gt;هذه فقرة.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;هذا رابط&lt;/a&gt;
+&lt;img src="image.jpg" alt="وصف"&gt;
+            </pre>
+            <a href="#tags" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="tags" class="hidden-close"></a>
+
+    <section id="modal-links" class="modal">
+        <div class="modal-content">
+            <h2>الروابط</h2>
+            <p>تُستخدم الروابط لإنشاء روابط بين صفحات الويب.</p>
+            <pre>
+&lt;a href="https://example.com"&gt;زيارة Example&lt;/a&gt;
+            </pre>
+            <a href="#links" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="links" class="hidden-close"></a>
+
+    <section id="modal-lists" class="modal">
+        <div class="modal-content">
+            <h2>القوائم</h2>
+            <p>يوفر HTML نوعين من القوائم: القوائم المرتبة (&lt;ol&gt;) والقوائم غير المرتبة (&lt;ul&gt;).</p>
+            <pre>
+&lt;ul&gt;
+  &lt;li&gt;البند 1&lt;/li&gt;
+  &lt;li&gt;البند 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;البند الأول&lt;/li&gt;
+  &lt;li&gt;البند الثاني&lt;/li&gt;
+&lt;/ol&gt;
+            </pre>
+            <a href="#lists" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="lists" class="hidden-close"></a>
+
+    <section id="modal-images" class="modal">
+        <div class="modal-content">
+            <h2>الصور</h2>
+            <p>يمكن تضمين الصور باستخدام علامة &lt;img&gt;. يمكنك أيضًا إضافة سمات مثل &lt;alt&gt; لتحسين الوصول.</p>
+            <pre>
+&lt;img src="image.jpg" alt="وصف"&gt;
+            </pre>
+            <a href="#images" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="images" class="hidden-close"></a>
+
+    <section id="modal-attributes" class="modal">
+        <div class="modal-content">
+            <h2>السمات</h2>
+            <p>توفر السمات معلومات إضافية حول عناصر HTML. تشمل السمات الشائعة &lt;id&gt; و&lt;class&gt; و&lt;style&gt;.</p>
+            <pre>
+&lt;div id="uniqueId" class="className" style="color: red;"&gt;المحتوى&lt;/div&gt;
+            </pre>
+            <a href="#attributes" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="attributes" class="hidden-close"></a>
+
+    <section id="modal-forms" class="modal">
+        <div class="modal-content">
+            <h2>النماذج</h2>
+            <p>تُستخدم نماذج HTML لجمع مدخلات المستخدم وإرسال البيانات إلى الخادم. تشمل عناصر النموذج المهمة:</p>
+            <ul>
+                <li>&lt;label&gt; و&lt;input&gt;</li>
+                <li>&lt;textarea&gt;</li>
+                <li>&lt;button&gt;</li>
+            </ul>
+            <pre>
+&lt;form&gt;
+  &lt;label for="name"&gt;الاسم:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+  &lt;button type="submit"&gt;إرسال&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+            <a href="#forms" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="forms" class="hidden-close"></a>
+
+    <section id="modal-tables" class="modal">
+        <div class="modal-content">
+            <h2>الجداول</h2>
+            <p>تُستخدم الجداول في HTML لعرض البيانات في شكل جدولي. تشمل العناصر الرئيسية:</p>
+            <ul>
+                <li>&lt;table&gt;</li>
+                <li>&lt;tr&gt;</li>
+                <li>&lt;th&gt; و&lt;td&gt;</li>
+            </ul>
+            <pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;الاسم&lt;/th&gt;
+    &lt;th&gt;العمر&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;جون&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+            <a href="#tables" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="tables" class="hidden-close"></a>
+
+    <section id="modal-media" class="modal">
+        <div class="modal-content">
+            <h2>الوسائط</h2>
+            <p>يسمح HTML بتضمين أنواع مختلفة من الوسائط، مثل الصور والفيديوهات والصوت. تشمل العناصر الرئيسية:</p>
+            <ul>
+                <li>&lt;img&gt;</li>
+                <li>&lt;video&gt;</li>
+                <li>&lt;audio&gt;</li>
+            </ul>
+            <pre>
+&lt;img src="image.jpg" alt="وصف"&gt;
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  متصفحك لا يدعم علامة الفيديو.
+&lt;/video&gt;
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  متصفحك لا يدعم عنصر الصوت.
+&lt;/audio&gt;
+            </pre>
+            <a href="#media" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="media" class="hidden-close"></a>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-logo">
+                <span>طريق الويب</span>
+                <i class="fas fa-road"></i>
+            </div>
+            <p class="footer-description">
+                منصة تعليمية لتطوير الويب باللغة العربية، لتمكين الجميع من تعلم البرمجة.
+            </p>
+            <div class="social-links">
+                <a href="https://facebook.com" aria-label="فيسبوك">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" aria-label="تويتر">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" aria-label="لينكد إن">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" aria-label="جيت هب">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">روابط مهمة</h3>
+            <ul class="footer-links">
+                <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+                <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+                <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">اتصل بنا</h3>
+            <ul class="footer-links">
+                <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> العراق، كردستان</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>خارطة تطوير الويب ٢٠٢٤. جميع الحقوق محفوظة لفريقنا &copy;</p>
+        <nav class="language-selector">
+            <a href="../index.html">كردي</a>
+            <a href="./index.html" class="active">عربي</a>
+            <a href="../en/index.html">إنجليزي</a>
+        </nav>
+    </div>
+</footer>
+</div>
+</body>
+</html>

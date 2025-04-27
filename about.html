@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تیمەکەمان | ڕێگای وێب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css">
+</head>
+<body>
+    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+    
+    <div class="content">
+        <header>
+            <div class="container">
+                <div class="logo"><span class="navbar-logo">ڕیگای وێب</span> <i class="fas fa-road"></i></div>
+                <!-- HTML -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span class="nav-toggle-icon"></span>
+                </label>
+                <nav class="nav-menu-dropdown" aria-label="Main Navigation">
+                    <div class="search-container">
+                        <input type="search" 
+                               class="search-box" 
+                               placeholder="گەڕان لە ناوەڕۆکەکان..." 
+                               aria-label="Search">
+                        <i class="fas fa-search search-icon"></i>
+                        
+                        <div class="search-results">
+                            <div class="search-result-item">
+                                <i class="fas fa-code"></i>
+                                <span>HTML بنەڕەتەکانی</span>
+                            </div>
+                            <div class="search-result-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>CSS فێربوونی</span>
+                            </div>
+                            <div class="search-result-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript چییە؟</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </label>
+                    <a href="index.html" class="nav-link">ماڵەوە <i class="fas fa-home"></i></a>
+                    <a href="./html.html" class="nav-link">HTML <i class="fas fa-code"></i></a>
+                    <a href="./css.html" class="nav-link">CSS <i class="fas fa-paint-brush"></i></a>
+                    <a href="./javascript.html" class="nav-link">JavaScript <i class="fab fa-js"></i></a>
+                    <a href="./about.html" class="nav-link active">دەربارە <i class="fas fa-users"></i></a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="team-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="pulse-dot"></span>
+                            تیمێکی پڕۆفیشناڵ
+                        </div>
+                        <h1 class="hero-title">
+                            <span class="gradient-text">تیمی ڕێگای وێب</span>
+                            <div class="hero-decoration">
+                                <svg class="squiggle" viewBox="0 0 100 20">
+                                    <path d="M0,10 Q25,0 50,10 T100,10" stroke="var(--primary)" fill="none"/>
+                                </svg>
+                            </div>
+                        </h1>
+                        <p class="hero-subtitle">پسپۆڕانی بەهرەمەند لە دروستکردنی ئەزموونی دیجیتاڵی</p>
+                    </div>
+                </div>
+                <div class="hero-background">
+                    <div class="gradient-sphere"></div>
+                    <div class="tech-orbit">
+                        <div class="orbit-circle"></div>
+                        <div class="tech-item" style="--delay: 0s"><i class="fab fa-html5"></i></div>
+                        <div class="tech-item" style="--delay: 2s"><i class="fab fa-css3-alt"></i></div>
+                        <div class="tech-item" style="--delay: 4s"><i class="fab fa-js"></i></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Grid Section -->
+            <section class="team-section">
+                
+                    
+                    <div class="team-grid">
+                        <!-- Team Card 1 -->
+<div class="team-card">
+    <div class="card-front">
+        <div class="profile-image">
+            <img src="./assets/images/girl.jpg" alt="گوڵستان عەلی">
+            <div class="status-badge online"></div>
+        </div>
+        <h3>گوڵستان عەلی</h3>
+        <span class="role">گەشەپێدەری سەرەکی</span>
+    </div>
+    <div class="card-back">
+        <div class="back-content">
+            <p class="experience">پسپۆڕی فوڵ-ستاک بە ئەزموونی +٨ ساڵ</p>
+            <div class="skills-container">
+                <div class="skill-badge">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-badge">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-btn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <button class="contact-btn">
+                <i class="fas fa-envelope"></i>
+                پەیوەندی
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Team Card 2 -->
+  <div class="team-card">
+    <div class="card-front">
+        <div class="profile-image">
+            <img src="./assets/images/girl.jpg" alt="خەندە محەمەد">
+            <div class="status-badge online"></div>
+        </div>
+        <h3>خەندە محەمەد</h3>
+        <span class="role">دیزاینەری سەرەکی</span>
+    </div>
+    <div class="card-back">
+        <div class="back-content">
+            <p class="experience">پسپۆڕی UI/UX بە ئەزموونی +٦ ساڵ</p>
+            <div class="skills-container">
+                <div class="skill-badge">
+                    <i class="fab fa-figma"></i>
+                    <span>Figma</span>
+                </div>
+                <div class="skill-badge">
+                    <i class="fab fa-adobe"></i>
+                    <span>Adobe XD</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-btn">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-behance"></i>
+                </a>
+            </div>
+            <button class="contact-btn">
+                <i class="fas fa-envelope"></i>
+                پەیوەندی
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Team Card 3 -->
+  <div class="team-card">
+    <div class="card-front">
+        <div class="profile-image">
+            <img src="./assets/images/boy.jpg" alt="کازم جازم">
+            <div class="status-badge online"></div>
+        </div>
+        <h3>کازم جازم</h3>
+        <span class="role">گەشەپێدەری ڕووکار</span>
+    </div>
+    <div class="card-back">
+        <div class="back-content">
+            <p class="experience">پسپۆڕی گەشەپێدانی ڕووکار بە ئەزموونی +٤ ساڵ</p>
+            <div class="skills-container">
+                <div class="skill-badge">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-badge">
+                    <i class="fab fa-vuejs"></i>
+                    <span>Vue.js</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-btn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </div>
+            <button class="contact-btn">
+                <i class="fas fa-envelope"></i>
+                پەیوەندی
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Team Card 4 -->
+  <div class="team-card">
+    <div class="card-front">
+        <div class="profile-image">
+            <img src="./assets/images/boy.jpg" alt="زیرەک جەمیل">
+            <div class="status-badge online"></div>
+        </div>
+        <h3>زیرەک جەمیل</h3>
+        <span class="role">گەشەپێدەری باکگراوند</span>
+    </div>
+    <div class="card-back">
+        <div class="back-content">
+            <p class="experience">پسپۆڕی گەشەپێدانی باکگراوند بە ئەزموونی +٥ ساڵ</p>
+            <div class="skills-container">
+                <div class="skill-badge">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-badge">
+                    <i class="fas fa-database"></i>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-btn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-stack-overflow"></i>
+                </a>
+            </div>
+            <button class="contact-btn">
+                <i class="fas fa-envelope"></i>
+                پەیوەندی
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Team Card 5 -->
+  <div class="team-card">
+    <div class="card-front">
+        <div class="profile-image">
+            <img src="./assets/images/boy.jpg" alt="بیلال شەهاب">
+            <div class="status-badge online"></div>
+        </div>
+        <h3>بیلال شەهاب</h3>
+        <span class="role">گەشەپێدەری مۆبایل</span>
+    </div>
+    <div class="card-back">
+        <div class="back-content">
+            <p class="experience">پسپۆڕی گەشەپێدانی مۆبایل بە ئەزموونی +٣ ساڵ</p>
+            <div class="skills-container">
+                <div class="skill-badge">
+                    <i class="fab fa-react"></i>
+                    <span>React Native</span>
+                </div>
+                <div class="skill-badge">
+                    <i class="fab fa-swift"></i>
+                    <span>Swift</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-btn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fab fa-medium"></i>
+                </a>
+            </div>
+            <button class="contact-btn">
+                <i class="fas fa-envelope"></i>
+                پەیوەندی
+            </button>
+        </div>
+    </div>
+  </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">پڕۆژەکان</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">خوێندکاران</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">کۆرسەکان</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>ڕیگای وێب</span>
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <p class="footer-description">
+                        پلاتفۆرمێکی فێرکاری بۆ فێربوونی گەشەپێدانی وێب بە زمانی کوردی، بۆ ئەوەی هەموو کەسێک بتوانێت فێری پرۆگرامینگ ببێت.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section" dir="ltr">
+                    <h3 class="footer-heading">بەستەرە گرنگەکان</h3>
+                    <ul class="footer-links">
+                        <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+                        <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+                        <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section" dir="ltr">
+                    <h3 class="footer-heading">پەیوەندی</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                        <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> کوردستان، عێراق</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>نەخشەی فێربوونی وێب دیزاین ٢٠٢٤. گشت مافەکان پارێزراوە لە لایەن تیمی ئێمە &copy;</p>
+                <nav class="language-selector">
+                    <a href="./index.html" class="active">کوردی</a>
+                    <a href="./ar/index.html">عەرەبی</a>
+                    <a href="./en/index.html">ئینگلیزی</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

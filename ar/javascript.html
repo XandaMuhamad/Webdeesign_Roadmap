@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خارطة تعلم JavaScript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/mediaQuery.css">
+    <link rel="stylesheet" href="../css/javascript-styles.css">
+</head>
+<body>
+    <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+    <div class="content">
+        <header>
+            <div class="container">
+                <div class="logo"><span class="navbar-logo">طريق الويب</span> <i class="fas fa-road"></i></div>
+                <!-- HTML -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span class="nav-toggle-icon"></span>
+                </label>
+                <nav class="nav-menu-dropdown" aria-label="التنقل الرئيسي">
+                    <div class="search-container">
+                        <input type="search" 
+                               class="search-box" 
+                               placeholder="ابحث في المحتوى..." 
+                               aria-label="بحث">
+                        <i class="fas fa-search search-icon"></i>
+                        
+                        <div class="search-results">
+                            <div class="search-result-item">
+                                <i class="fas fa-code"></i>
+                                <span>أساسيات HTML</span>
+                            </div>
+                            <div class="search-result-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>تعلم CSS</span>
+                            </div>
+                            <div class="search-result-item">
+                                <i class="fab fa-js"></i>
+                                <span>ما هو JavaScript؟</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </label>
+                    <a href="index.html" class="nav-link ">الرئيسية <i class="fas fa-home"></i></a>
+                    <a href="./html.html" class="nav-link">HTML <i class="fas fa-code"></i></a>
+                    <a href="./css.html" class="nav-link">CSS <i class="fas fa-paint-brush"></i></a>
+                    <a href="./javascript.html" class="nav-link active">JavaScript <i class="fab fa-js"></i></a>
+                    <a href="./about.html" class="nav-link">من نحن <i class="fas fa-users"></i></a>
+                    
+                </nav>
+            </div>
+        </header>
+    
+        <main>
+            <section class="js-hero">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            تعلم 
+                            <span class="gradient-text">JavaScript</span>
+                            <span class="code-tag-decoration">{}</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            تعلم <span class="highlight">JavaScript</span>، أقوى لغة برمجة للويب. هنا ستتعلم كل شيء من الأساسيات إلى المستوى المتقدم.
+                        </p>
+        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-code"></i>
+                                <span>برمجة تفاعلية</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>مشاريع عملية</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>تدريب مستمر</span>
+                            </div>
+                        </div>
+        
+                        <div class="hero-actions">
+                            <a href="#start-learning" class="cta-button primary">
+                                <span class="button-icon">
+                                    <i class="fas fa-code"></i>
+                                </span>
+                                <span class="button-text">
+                                    <span class="button-label">ابدأ الآن</span>
+                                    <span class="button-description">تعلم JavaScript</span>
+                                </span>
+                                <span class="button-arrow">
+                                    <i class="fas fa-arrow-left"></i>
+                                </span>
+                            </a>
+                            
+                            <a href="#course-outline" class="cta-button secondary">
+                                <span class="button-icon">
+                                    <i class="fas fa-list-ul"></i>
+                                </span>
+                                <span class="button-text">
+                                    <span class="button-label">المحتوى</span>
+                                    <span class="button-description">أقسام الدورة</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="code-editor">
+                        <div class="editor-header">
+                            <div class="editor-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="file-name">example.js</span>
+                        </div>
+                        <div class="editor-content">
+                            <!-- Add your JavaScript code example here -->
+                            <pre><code>
+        function learnJS() {
+            const skills = ['DOM', 'Events', 'API'];
+            let progress = 0;
+            
+            function updateProgress() {
+                progress += 20;
+                console.log(`Progress: ${progress}%`);
+            }
+            
+            skills.forEach(skill => {
+                console.log(`Learning ${skill}...`);
+                updateProgress();
+            });
+        }
+        
+        learnJS();</code></pre>
+                        </div>
+                    </div>
+        
+                    <div class="floating-elements">
+                        <div class="js-tag">function()</div>
+                        <div class="js-tag">=></div>
+                        <div class="js-tag">const</div>
+                        <div class="js-tag">{ }</div>
+                    </div>
+                </div>
+
+                <div class="hero-background">
+                    <div class="gradient-sphere"></div>
+                    <div class="grid-overlay"></div>
+                    <div class="js-symbols">{}</div>
+                </div>
+            </section>
+    
+            <section class="container roadmap-grid">
+                <div class="roadmap-card">
+                    <a href="#modal-variables">
+                        <i class="fas fa-database"></i>
+                        <h3>المتغيرات وأنواع البيانات</h3>
+                        <p>تعلم عن المتغيرات في جافاسكريبت، كيفية تعريفها، وأنواع البيانات المختلفة</p>
+                    </a>
+                </div>
+    
+                <div class="roadmap-card">
+                    <a href="#modal-functions">
+                        <i class="fas fa-code"></i>
+                        <h3>الدوال</h3>
+                        <p>تعلم كيفية إنشاء واستخدام الدوال في جافاسكريبت</p>
+                    </a>
+                </div>
+
+                <div class="roadmap-card">
+                    <a href="#modal-control">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>هياكل التحكم</h3>
+                        <p>تعلم عن العبارات الشرطية والحلقات في جافاسكريبت</p>
+                    </a>
+                </div>
+    
+                <div class="roadmap-card">
+                    <a href="#modal-dom">
+                        <i class="fas fa-tree"></i>
+                        <h3>التعامل مع DOM</h3>
+                        <p>تعلم كيفية التعامل مع عناصر صفحة الويب باستخدام جافاسكريبت</p>
+                    </a>
+                </div>
+    
+                <div class="roadmap-card">
+                    <a href="#modal-events">
+                        <i class="fas fa-bolt"></i>
+                        <h3>معالجة الأحداث</h3>
+                        <p>تعلم كيفية الاستجابة لتفاعلات المستخدم في جافاسكريبت</p>
+                    </a>
+                </div>
+    
+                <div class="roadmap-card">
+                    <a href="#modal-async">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>البرمجة غير المتزامنة</h3>
+                        <p>تعلم البرمجة غير المتزامنة مع Callbacks و Promises و Async/Await</p>
+                    </a>
+                </div>
+    
+                <div class="roadmap-card">
+                    <a href="#modal-objects"></a>
+                        <i class="fas fa-object-group"></i>
+                        <h3>الكائنات</h3>
+                        <p>تعلم كيفية إنشاء واستخدام الكائنات في جافاسكريبت</p>
+                     </a>
+                </div>
+   
+                <div class="roadmap-card">
+                    <a href="#modal-arrays">
+                        <i class="fas fa-th"></i>
+                        <h3>المصفوفات</h3>
+                        <p>فهم كيفية العمل مع المصفوفات في جافاسكريبت</p>
+                    </a>
+                </div>
+    
+                <div class="roadmap-card">
+                    <a href="#modal-debugging">
+                        <i class="fas fa-bug"></i>
+                        <h3>تصحيح الأخطاء</h3>
+                        <p>تعلم كيفية اكتشاف وإصلاح الأخطاء في كود جافاسكريبت بفعالية</p>
+                    </a>
+                </div>
+            </section>
+    
+            <!-- Modal Sections -->
+            <section id="modal-variables" class="modal">
+                <div class="modal-content">
+                    <h2>المتغيرات وأنواع البيانات</h2>
+                    <p>المتغيرات هي حاويات لتخزين البيانات في جافاسكريبت.</p>
+    
+                    <div class="code-section large-code">
+                        <h3>تعريف المتغيرات:</h3>
+                        <pre><code><span class="keyword">let</span> <span class="variable">name</span> = <span class="string">"أحمد"</span>;
+    <span class="keyword">const</span> <span class="variable">age</span> = <span class="number">25</span>;
+    <span class="keyword">let</span> <span class="variable">isStudent</span> = <span class="keyword">true</span>;</code></pre>
+                    </div>
+    
+                    <div class="explanation">
+                        <h4>أنواع البيانات الأساسية:</h4>
+                        <ul>
+                            <li><code>string</code> - للنصوص</li>
+                            <li><code>number</code> - للأرقام</li>
+                            <li><code>boolean</code> - للقيم المنطقية</li>
+                            <li><code>null</code> - لعدم وجود قيمة</li>
+                            <li><code>undefined</code> - للمتغيرات غير المعرفة</li>
+                        </ul>
+                    </div>
+    
+                    <a href="#variables" class="close-btn">إغلاق</a>
+                </div>
+            </section>
+            <a id="variables" class="hidden-close"></a>
+
+            <section id="modal-functions" class="modal">
+                <div class="modal-content">
+                    <h2>الدوال</h2>
+                    <p>الدوال هي كتل برمجية قابلة لإعادة الاستخدام.</p>
+    
+                    <div class="code-section large-code">
+                        <h3>تعريف الدوال:</h3>
+                        <pre><code><span class="keyword">function</span> <span class="function">sayHello</span>() {
+        <span class="variable">console</span>.<span class="function">log</span>(<span class="string">"مرحباً بالعالم!"</span>);
+    }
+    
+    <span class="keyword">function</span> <span class="function">addNumbers</span>(<span class="variable">a</span>, <span class="variable">b</span>) {
+        <span class="keyword">return</span> <span class="variable">a</span> + <span class="variable">b</span>;
+    }</code></pre>
+                    </div>
+    
+                    <div class="explanation">
+                        <h4>أنواع الدوال:</h4>
+                        <ul>
+                            <li>الدوال العادية</li>
+                            <li>دوال السهم (Arrow Functions)</li>
+                            <li>الدوال المجهولة (Anonymous Functions)</li>
+                            <li>دوال رد النداء (Callback Functions)</li>
+                        </ul>
+                    </div>
+    
+                    <a href="#functions" class="close-btn">إغلاق</a>
+                </div>
+            </section>
+            <a id="functions" class="hidden-close"></a>
+    
+            <section id="modal-control" class="modal">
+                <div class="modal-content">
+                    <h2>هياكل التحكم</h2>
+                    <p>هياكل التحكم تسمح لك بالتحكم في تدفق تنفيذ البرنامج.</p>
+    
+                    <div class="code-section large-code">
+                        <h3>العبارات الشرطية:</h3>
+                        <pre><code><span class="keyword">if</span> (<span class="variable">age</span> >= <span class="number">18</span>) {
+        <span class="variable">console</span>.<span class="function">log</span>(<span class="string">"أنت بالغ"</span>);
+    } <span class="keyword">else</span> {
+        <span class="variable">console</span>.<span class="function">log</span>(<span class="string">"أنت قاصر"</span>);
+    }</code></pre>
+                    </div>
+    
+                    <div class="explanation">
+                        <h4>أنواع هياكل التحكم:</h4>
+                        <ul>
+                            <li><code>if/else</code> - للعبارات الشرطية</li>
+                            <li><code>for</code> - للحلقات التكرارية</li>
+                            <li><code>while</code> - للحلقات الشرطية</li>
+                            <li><code>switch</code> - للاختيار المتعدد</li>
+                        </ul>
+                    </div>
+    
+                    <a href="#control" class="close-btn">إغلاق</a>
+                </div>
+            </section>
+            <a id="control" class="hidden-close"></a>
+    
+            <section id="modal-dom" class="modal">
+                <div class="modal-content">
+                    <h2>التعامل مع DOM</h2>
+                    <p>DOM يتيح لك التفاعل مع عناصر صفحة الويب وتعديلها.</p>
+    
+                    <div class="code-section large-code">
+                        <h3>التعامل مع العناصر:</h3>
+                        <pre><code><span class="comment">// اختيار عنصر</span>
+    <span class="keyword">let</span> <span class="variable">element</span> = <span class="variable">document</span>.<span class="function">querySelector</span>(<span class="string">'.my-class'</span>);
+    
+    <span class="comment">// تغيير المحتوى</span>
+    <span class="variable">element</span>.<span class="property">innerHTML</span> = <span class="string">"نص جديد"</span>;
+    
+    <span class="comment">// تغيير النمط</span>
+    <span class="variable">element</span>.<span class="property">style</span>.<span class="property">color</span> = <span class="string">"red"</span>;</code></pre>
+                    </div>
+    
+                    <div class="explanation">
+                        <h4>عمليات DOM الشائعة:</h4>
+                        <ul>
+                            <li><code>querySelector()</code> - اختيار عنصر</li>
+                            <li><code>createElement()</code> - إنشاء عنصر جديد</li>
+                            <li><code>appendChild()</code> - إضافة عنصر</li>
+                            <li><code>removeChild()</code> - حذف عنصر</li>
+                        </ul>
+                    </div>
+    
+                    <a href="#dom" class="close-btn">إغلاق</a>
+                </div>
+            </section>
+            <a id="dom" class="hidden-close"></a>
+    
+
+    <section id="modal-events" class="modal">
+        <div class="modal-content">
+            <h2>معالجة الأحداث</h2>
+            <p>الأحداث تسمح لك بالاستجابة لتفاعلات المستخدم مع صفحة الويب.</p>
+
+            <div class="code-section large-code">
+                <h3>معالجة الأحداث:</h3>
+                <pre><code><span class="variable">button</span>.<span class="function">addEventListener</span>(<span class="string">'click'</span>, () => {
+<span class="variable">console</span>.<span class="function">log</span>(<span class="string">"تم النقر على الزر!"</span>);
+});
+
+<span class="variable">input</span>.<span class="function">addEventListener</span>(<span class="string">'change'</span>, (<span class="variable">event</span>) => {
+<span class="variable">console</span>.<span class="function">log</span>(<span class="variable">event</span>.<span class="property">target</span>.<span class="property">value</span>);
+});</code></pre>
+            </div>
+
+            <div class="explanation">
+                <h4>الأحداث الشائعة:</h4>
+                <ul>
+                    <li><code>click</code> - النقر على عنصر</li>
+                    <li><code>submit</code> - إرسال نموذج</li>
+                    <li><code>keyup</code> - رفع مفتاح</li>
+                    <li><code>mouseover</code> - تحريك المؤشر فوق عنصر</li>
+                </ul>
+            </div>
+
+            <a href="#events" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="events" class="hidden-close"></a>
+
+    <section id="modal-async" class="modal">
+        <div class="modal-content">
+            <h2>البرمجة غير المتزامنة</h2>
+            <p>البرمجة غير المتزامنة تسمح بتنفيذ العمليات دون انتظار اكتمالها.</p>
+
+            <div class="code-section large-code">
+                <h3>مثال على Async/Await:</h3>
+                <pre><code><span class="keyword">async function</span> <span class="function">getData</span>() {
+<span class="keyword">try</span> {
+    <span class="keyword">const</span> <span class="variable">response</span> = <span class="keyword">await</span> <span class="function">fetch</span>(<span class="string">'api/data'</span>);
+    <span class="keyword">const</span> <span class="variable">data</span> = <span class="keyword">await</span> <span class="variable">response</span>.<span class="function">json</span>();
+    <span class="keyword">return</span> <span class="variable">data</span>;
+} <span class="keyword">catch</span> (<span class="variable">error</span>) {
+    <span class="variable">console</span>.<span class="function">error</span>(<span class="variable">error</span>);
+}
+}</code></pre>
+            </div>
+
+            <a href="#async" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="async" class="hidden-close"></a>
+
+    <!-- Objects Modal Section -->
+    <section id="modal-objects" class="modal">
+        <div class="modal-content">
+            <h2>الكائنات في JavaScript</h2>
+            <p>الكائنات هي هياكل بيانات تسمح لك بتخزين مجموعات من القيم والدوال المرتبطة.</p>
+
+            <div class="object-visual">
+                <div class="object-demo">
+                    <div class="code-input">
+                        <pre><code><span class="keyword">const</span> <span class="variable">car</span> = {
+    <span class="property">brand</span>: <span class="string">'تويوتا'</span>,
+    <span class="property">model</span>: <span class="string">'كامري'</span>,
+    <span class="property">year</span>: <span class="number">2024</span>,
+    <span class="property">isElectric</span>: <span class="keyword">false</span>,
+    <span class="property">start</span>: <span class="keyword">function</span>() {
+        <span class="keyword">return</span> <span class="string">'المحرك يعمل!'</span>;
+    },
+    <span class="property">specs</span>: {
+        <span class="property">engine</span>: <span class="string">'V6'</span>,
+        <span class="property">power</span>: <span class="number">300</span>
+    }
+};</code></pre>
+                    </div>
+                    <div class="code-output">
+                        <pre><code>car.brand    // "تويوتا"
+car.year     // 2024
+car.start()  // "المحرك يعمل!"
+car.specs.engine  // "V6"</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="method-list">
+                <div class="method-item">
+                    <div class="method-name">Object.keys()</div>
+                    <p>استخراج مصفوفة بأسماء الخصائص</p>
+                    <span class="property-type type-function">Function</span>
+                </div>
+                <div class="method-item">
+                    <div class="method-name">Object.values()</div>
+                    <p>استخراج مصفوفة بقيم الخصائص</p>
+                    <span class="property-type type-function">Function</span>
+                </div>
+                <div class="method-item">
+                    <div class="method-name">Object.entries()</div>
+                    <p>استخراج مصفوفة من الأزواج [مفتاح، قيمة]</p>
+                    <span class="property-type type-function">Function</span>
+                </div>
+                <div class="method-item">
+                    <div class="method-name">Object.freeze()</div>
+                    <p>منع التعديل على الكائن</p>
+                    <span class="property-type type-function">Function</span>
+                </div>
+            </div>
+
+            <div class="explanation">
+                <h4>أنواع القيم في الكائنات:</h4>
+                <ul>
+                    <li><span class="property-type type-string">String</span> للنصوص</li>
+                    <li><span class="property-type type-number">Number</span> للأرقام</li>
+                    <li><span class="property-type type-boolean">Boolean</span> للقيم المنطقية</li>
+                    <li><span class="property-type type-function">Function</span> للدوال</li>
+                </ul>
+            </div>
+
+            <a href="#objects" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="objects" class="hidden-close"></a>
+
+    <!-- Arrays Modal Section -->
+    <section id="modal-arrays" class="modal">
+        <div class="modal-content">
+            <h2>المصفوفات في JavaScript</h2>
+            <p>المصفوفات هي هياكل بيانات تسمح لك بتخزين مجموعة منظمة من العناصر في متغير واحد.</p>
+
+            <div class="array-visual">
+                <div class="array-demo">
+                    <div class="code-input">
+                        <pre><code><span class="keyword">const</span> <span class="variable">technologies</span> = [
+    <span class="string">'HTML'</span>,
+    <span class="string">'CSS'</span>,
+    <span class="string">'JavaScript'</span>
+];
+
+<span class="comment">// طرق مختلفة للتعامل مع المصفوفات</span>
+technologies.push(<span class="string">'React'</span>);
+technologies.map(<span class="variable">tech</span> => {
+    <span class="keyword">return</span> `تعلم ${tech}`;
+});
+
+<span class="keyword">const</span> <span class="variable">filtered</span> = technologies
+    .filter(<span class="variable">tech</span> => 
+        tech.length > 3
+    );</code></pre>
+                    </div>
+                    <div class="code-output">
+                        <pre><code>technologies[0]     // "HTML"
+technologies.length // 4
+technologies.map()  // ["تعلم HTML", "تعلم CSS", ...]
+filtered           // ["HTML", "JavaScript", "React"]</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="array-methods">
+                <h3>الطرق الأساسية للمصفوفات</h3>
+                <div class="method-grid">
+                    <div class="method-item">
+                        <div class="method-name">push() / pop()</div>
+                        <p>إضافة/حذف عناصر من نهاية المصفوفة</p>
+                        <div class="method-example">
+                            <code>array.push('عنصر جديد');</code>
+                        </div>
+                    </div>
+                    <div class="method-item">
+                        <div class="method-name">map()</div>
+                        <p>إنشاء مصفوفة جديدة بتحويل كل عنصر</p>
+                        <div class="method-example">
+                            <code>array.map(x => x * 2);</code>
+                        </div>
+                    </div>
+                    <div class="method-item">
+                        <div class="method-name">filter()</div>
+                        <p>إنشاء مصفوفة جديدة بالعناصر المطابقة للشرط</p>
+                        <div class="method-example">
+                            <code>array.filter(x => x > 5);</code>
+                        </div>
+                    </div>
+                    <div class="method-item">
+                        <div class="method-name">reduce()</div>
+                        <p>تقليص المصفوفة لقيمة واحدة</p>
+                        <div class="method-example">
+                            <code>array.reduce((a, b) => a + b);</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="array-features">
+                <h3>مميزات المصفوفات</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-sort-numeric-up"></i>
+                        <h4>الترتيب</h4>
+                        <p>العناصر مرتبة بمؤشرات رقمية</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-random"></i>
+                        <h4>المرونة</h4>
+                        <p>يمكن تغيير حجم المصفوفة ديناميكياً</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-layer-group"></i>
+                        <h4>تعدد الأنواع</h4>
+                        <p>يمكن تخزين أنواع مختلفة من البيانات</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#arrays" class="close-btn">إغلاق</a>
+        </div>
+    </section>
+    <a id="arrays" class="hidden-close"></a>
+</main>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <span>طريق الويب</span>
+                    <i class="fas fa-road"></i>
+                </div>
+                <p class="footer-description">
+                    منصة تعليمية لتطوير الويب باللغة العربية، لتمكين الجميع من تعلم البرمجة.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" aria-label="فيسبوك">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" aria-label="تويتر">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com" aria-label="لينكد إن">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com" aria-label="جيت هب">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer-section">
+                <h3 class="footer-heading">روابط مهمة</h3>
+                <ul class="footer-links">
+                    <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+                    <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+                    <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3 class="footer-heading">اتصل بنا</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                    <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> العراق، كردستان</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>خارطة تطوير الويب ٢٠٢٤. جميع الحقوق محفوظة لفريقنا &copy;</p>
+            <nav class="language-selector">
+                <a href="../index.html">كردي</a>
+                <a href="./index.html" class="active">عربي</a>
+                <a href="../en/index.html">إنجليزي</a>
+            </nav>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

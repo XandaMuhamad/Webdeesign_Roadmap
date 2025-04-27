@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Roadmap</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="stylesheet" href="../css/dark-mode.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/mediaQuery.css">
+  <link rel="stylesheet" href="../css/css-styles.css">
+</head>
+<body>
+<input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+<div class="content">
+  <header>
+    <div class="container">
+        <div class="logo"><span class="navbar-logo"> RegayWeb </span> <i class="fas fa-road"></i></div>
+        <!-- HTML -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="nav-toggle-icon"></span>
+        </label>
+        <nav class="nav-menu-dropdown" aria-label="Main Navigation">
+            <div class="search-container">
+                <input type="search" 
+                       class="search-box" 
+                       placeholder="Search content..." 
+                       aria-label="Search">
+                <i class="fas fa-search search-icon"></i>
+                
+                <div class="search-results">
+                    <div class="search-result-item">
+                        <i class="fas fa-code"></i>
+                        <span>HTML Basics</span>
+                    </div>
+                    <div class="search-result-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Learn CSS</span>
+                    </div>
+                    <div class="search-result-item">
+                        <i class="fab fa-js"></i>
+                        <span>What is JavaScript?</span>
+                    </div>
+                </div>
+            </div>
+
+            <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+            <a href="index.html" class="nav-link ">Home <i class="fas fa-home"></i></a>
+            <a href="./html.html" class="nav-link">HTML <i class="fas fa-code"></i></a>
+            <a href="./css.html" class="nav-link active">CSS <i class="fas fa-paint-brush"></i></a>
+            <a href="./javascript.html" class="nav-link">JavaScript <i class="fab fa-js"></i></a>
+            <a href="./about.html" class="nav-link">About <i class="fas fa-users"></i></a>
+
+            
+        </nav>
+    </div>
+</header>
+
+
+  <main>
+    <section class="css-hero">
+      <div class="hero-container">
+          <div class="hero-content">
+              <div class="hero-badge">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS3</span>
+              </div>
+              
+              <h1 class="hero-title">
+                  <span class="gradient-text">Learn CSS</span>
+                  <div class="style-decoration">{ }</div>
+              </h1>
+
+              <p class="hero-description">
+                  Learn <span class="highlight">CSS</span> for 
+                  <span class="typing-container">
+                      <span class="typing-text">
+                          <span class="word">Web Design</span>
+                          <span class="word">Website Styling</span>
+                          <span class="word">Creating Styles</span>
+                      </span>
+                  </span>
+              </p>
+
+              <div class="feature-list">
+                  <div class="feature-item">
+                      <i class="fas fa-palette"></i>
+                      <span>Color Styles</span>
+                  </div>
+                  <div class="feature-item">
+                      <i class="fas fa-th"></i>
+                      <span>Flex & Grid</span>
+                  </div>
+                  <div class="feature-item">
+                      <i class="fas fa-magic"></i>
+                      <span>Animations</span>
+                  </div>
+              </div>
+
+              <div class="hero-actions">
+                  <a href="#start-learning" class="primary-button">
+                      <span class="button-content">Start Now
+                          <i class="fas fa-arrow-right"></i>
+                      </span>
+                  </a>
+                  
+                  <a href="#course-outline" class="secondary-button">
+                      <i class="fas fa-list"></i>
+                      <span>Course Content</span>
+                  </a>
+              </div>
+          </div>
+
+          <div class="hero-visual">
+              <div class="code-editor">
+                  <div class="editor-header">
+                      <div class="editor-dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </div>
+                      <span class="file-name">styles.css</span>
+                  </div>
+                  <div class="editor-content">
+                      <pre><code class="language-css">
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: linear-gradient(
+      45deg, 
+      #2196F3, 
+      #00BCD4
+  );
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}</code></pre>
+                  </div>
+              </div>
+
+              <div class="floating-elements">
+                  <div class="css-property">color: #2196F3;</div>
+                  <div class="css-property">margin: 2rem;</div>
+                  <div class="css-property">padding: 1rem;</div>
+                  <div class="css-property">display: flex;</div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="hero-background">
+          <div class="gradient-sphere"></div>
+          <div class="grid-overlay"></div>
+          <div class="css-symbols">{ }</div>
+      </div>
+  </section>
+
+    <section class="container roadmap-grid">
+      <div class="roadmap-card">
+        <a href="#modal-selectors">
+          <i class="fas fa-mouse-pointer"></i>
+          <h3>Selectors</h3>
+          <p>Learn about CSS selectors and how to use them.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-box-model">
+          <i class="fas fa-box"></i>
+          <h3>Box Model</h3>
+          <p>Understand the CSS box model and its components.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-display">
+          <i class="fas fa-desktop"></i>
+          <h3>Display</h3>
+          <p>Learn about different display properties in CSS.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-units">
+          <i class="fas fa-ruler"></i>
+          <h3>Units</h3>
+          <p>Understand various units used in CSS.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-flexbox">
+          <i class="fas fa-align-center"></i>
+          <h3>Flexbox</h3>
+          <p>Learn about the CSS Flexbox layout model.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-grid">
+          <i class="fas fa-th"></i>
+          <h3>Grid</h3>
+          <p>Understand the CSS Grid layout system.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-animations">
+          <i class="fas fa-play"></i>
+          <h3>Animations</h3>
+          <p>Learn about CSS animations and transitions.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-colors">
+          <i class="fas fa-palette"></i>
+          <h3>Colors</h3>
+          <p>Understand how to use colors in CSS.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-typography">
+          <i class="fas fa-font"></i>
+          <h3>Typography</h3>
+          <p>Learn about typography and text styling in CSS.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="modal-selectors" class="modal">
+      <div class="modal-content">
+        <h2>Selectors</h2>
+        <p>CSS selectors are used to select the HTML elements you want to style. Common selectors include:</p>
+        <ul>
+          <li><strong>Element Selector</strong> – Selects all elements of a given type.</li>
+          <li><strong>Class Selector</strong> – Selects all elements with a specific class.</li>
+          <li><strong>ID Selector</strong> – Selects a single element with a specific ID.</li>
+        </ul>
+        <pre>
+p {
+  color: blue;
+}
+.class-name {
+  font-size: 16px;
+}
+#id-name {
+  margin: 10px;
+}
+        </pre>
+        <a href="#selectors" class="close-btn">Close</a>
+      </div>
+    </section>
+    <a id="selectors" class="hidden-close"></a>
+
+    <section id="modal-box-model" class="modal">
+      <div class="modal-content">
+        <h2>Box Model</h2>
+        <p>The CSS box model describes the rectangular boxes generated for elements in the document tree and consists of:</p>
+        <ul>
+          <li><strong>Content</strong> – The actual content of the box, where text and images appear.</li>
+          <li><strong>Padding</strong> – Clears an area around the content. The padding is transparent.</li>
+          <li><strong>Border</strong> – A border that goes around the padding (if any) and content.</li>
+          <li><strong>Margin</strong> – Clears an area outside the border. The margin is transparent.</li>
+        </ul>
+        <pre>
+div {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 20px;
+}
+        </pre>
+        <a href="#box-model" class="close-btn">Close</a>
+      </div>
+    </section>
+    <a id="box-model" class="hidden-close"></a>
+
+    <section id="modal-display" class="modal">
+      <div class="modal-content">
+        <h2>Display</h2>
+        <p>The display property specifies the display behavior (the type of rendering box) of an element. Common values include:</p>
+        <ul>
+          <li><strong>block</strong> – The element is displayed as a block-level element.</li>
+          <li><strong>inline</strong> – The element is displayed as an inline-level element.</li>
+          <li><strong>flex</strong> – The element is displayed as a block-level flex container.</li>
+        </ul>
+        <pre>
+.block-element {
+  display: block;
+}
+.inline-element {
+  display: inline;
+}
+.flex-container {
+  display: flex;
+}
+        </pre>
+        <a href="#display" class="close-btn">Close</a>
+      </div>
+    </section>
+    <a id="display" class="hidden-close"></a>
+
+    <section id="modal-units" class="modal">
+      <div class="modal-content">
+        <h2>Units</h2>
+        <p>CSS has several different units for expressing a length. Common units include:</p>
+        <ul>
+          <li><strong>px</strong> – Pixels.</li>
+          <li><strong>%</strong> – Percentage.</li>
+          <li><strong>em</strong> – Relative to the font-size of the element.</li>
+          <li><strong>rem</strong> – Relative to the font-size of the root element.</li>
+        </ul>
+        <pre>
+div {
+  width: 100px;
+  height: 50%;
+  padding: 1em;
+  margin: 2rem;
+}
+        </pre>
+        <a href="#units" class="close-btn">Close</a>
+      </div>
+    </section>
+    <a id="units" class="hidden-close"></a>
+
+    <section id="modal-flexbox" class="modal">
+      <div class="modal-content">
+        <h2>Flexbox</h2>
+        <p>The CSS Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</p>
+        <ul>
+          <li><strong>display</strong> – Defines a flex container.</li>
+          <li><strong>flex-direction</strong> – Defines the direction of the flex items.</li>
+          <li><strong>justify-content</strong> – Aligns flex items along the main axis.</li>
+          <li><strong>align-items</strong> – Aligns flex items along the cross axis.</li>
+        </ul>
+        <pre>
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+        </pre>
+        <a href="#flexbox" class="close-btn">Close</a>
+      </div>
+    </section>
+    <a id="flexbox" class="hidden-close"></a>
+
+    <section id="modal-grid" class="modal">
+      <div class="modal-content">
+        <h2>Grid</h2>
+        <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+        <ul>
+          <li><strong>display</strong> – Defines a grid container.</li>
+          <li><strong>grid-template-columns</strong> – Defines the columns of the grid.</li>
+          <li><strong>grid-template-rows</strong> – Defines the rows of the grid.</li>
+          <li><strong>grid-gap</strong> – Defines the gap between the grid items.</li>
+        </ul>
+        <pre>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+        </pre>
+        <a href="#grid" class="close-btn">Close</a>
+      </div>
+    </section>
+    <a id="grid" class="hidden-close"></a>
+
+    <section id="modal-animations" class="modal">
+      <div class="modal-content">
+        <h2>CSS Animations</h2>
+        <p>CSS animations allow you to animate transitions between CSS styles. Key properties include:</p>
+        <ul>
+          <li><strong>animation-name</strong> – Specifies the name of the @keyframes animation.</li>
+          <li><strong>animation-duration</strong> – Specifies the duration of the animation.</li>
+          <li><strong>animation-timing-function</strong> – Specifies the speed curve of the animation.</li>
+        </ul>
+        <pre>
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+div {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+        </pre>
+        <a href="#animations" class="close-btn">Close</a>
+      </div>
+    </section>
+    <a id="animations" class="hidden-close"></a>
+
+    <section id="modal-colors" class="modal">
+      <div class="modal-content">
+        <h2>Colors</h2>
+        <p>CSS allows you to set colors for text, backgrounds, borders, and other elements. Common ways to define colors include:</p>
+        <ul>
+          <li><strong>Hexadecimal</strong> – e.g., <code>#ff0000</code> for red.</li>
+          <li><strong>RGB</strong> – e.g., <code>rgb(255, 0, 0)</code> for red.</li>
+          <li><strong>RGBA</strong> – e.g., <code>rgba(255, 0, 0, 0.5)</code> for red with 50% opacity.</li>
+          <li><strong>Named Colors</strong> – e.g., <code>red</code>.</li>
+        </ul>
+        <pre>
+p {
+  color: #ff0000;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+        </pre>
+        <a href="#colors" class="close-btn">Close</a>
+      </div>
+    </section>
+    <a id="colors" class="hidden-close"></a>
+
+    <section id="modal-typography" class="modal">
+      <div class="modal-content">
+        <h2>Typography</h2>
+        <p>Typography in CSS involves styling text. Key properties include:</p>
+        <ul>
+          <li><strong>font-family</strong> – Specifies the font.</li>
+          <li><strong>font-size</strong> – Sets the size of the text.</li>
+          <li><strong>font-weight</strong> – Defines the thickness of the text.</li>
+          <li><strong>line-height</strong> – Sets the space between lines of text.</li>
+        </ul>
+        <pre>
+p {
+  font-family: 'Arial, sans-serif';
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+        </pre>
+        <a href="#typography" class="close-btn">Close</a>
+      </div>
+    </section>
+    <a id="typography" class="hidden-close"></a>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-logo">
+                <span>Web Path</span>
+                <i class="fas fa-road"></i>
+            </div>
+            <p class="footer-description">
+                An educational platform for web development in English, enabling everyone to learn programming.
+            </p>
+            <div class="social-links">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">Important Links</h3>
+            <ul class="footer-links">
+                <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+                <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+                <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">Contact Us</h3>
+            <ul class="footer-links">
+                <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Iraq, Kurdistan</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Web Development Roadmap 2024. All rights reserved by our team &copy;</p>
+        <nav class="language-selector">
+            <a href="../index.html">Kurdish</a>
+            <a href="../ar/index.html">Arabic</a>
+            <a href="./index.html" class="active">English</a>
+        </nav>
+    </div>
+</footer>
+</div>
+</body>
+</html>

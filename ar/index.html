@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خارطة طريق مطور الواجهة الأمامية</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/mediaQuery.css">
+</head>
+<body>
+<input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+<div class="content">
+    <header>
+        <div class="container">
+            <div class="logo"><span class="navbar-logo">طريق الويب</span> <i class="fas fa-road"></i></div>
+            <!-- HTML -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span class="nav-toggle-icon"></span>
+            </label>
+            <nav class="nav-menu-dropdown" aria-label="التنقل الرئيسي">
+                <div class="search-container">
+                    <input type="search" 
+                           class="search-box" 
+                           placeholder="ابحث في المحتوى..." 
+                           aria-label="بحث">
+                    <i class="fas fa-search search-icon"></i>
+                    
+                    <div class="search-results">
+                        <div class="search-result-item">
+                            <i class="fas fa-code"></i>
+                            <span>أساسيات HTML</span>
+                        </div>
+                        <div class="search-result-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>تعلم CSS</span>
+                        </div>
+                        <div class="search-result-item">
+                            <i class="fab fa-js"></i>
+                            <span>ما هو JavaScript؟</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+                <a href="index.html" class="nav-link active">الرئيسية <i class="fas fa-home"></i></a>
+                <a href="./html.html" class="nav-link">HTML <i class="fas fa-code"></i></a>
+                <a href="./css.html" class="nav-link">CSS <i class="fas fa-paint-brush"></i></a>
+                <a href="./javascript.html" class="nav-link">JavaScript <i class="fab fa-js"></i></a>
+                <a href="./about.html" class="nav-link">من نحن <i class="fas fa-users"></i></a>
+                
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    متاح للتعلم ٢٤/٧
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">تعلم تطوير الويب</span>
+                    <div class="hero-title-decoration">
+                        <svg class="squiggle" viewBox="0 0 100 20">
+                            <path d="M0,10 Q25,0 50,10 T100,10" stroke="var(--accent-color)" fill="none"/>
+                        </svg>
+                    </div>
+                </h1>
+
+                <p class="hero-description">
+                    رحلة خاصة لتعلم
+                    <span class="typing-text">
+                        <span class="word">HTML</span>
+                        <span class="word">CSS</span>
+                        <span class="word">JavaScript</span>
+                    </span>
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#roadmap" class="primary-button">
+                        <span class="button-content">ابدأ الآن</span>
+                        <span class="button-icon">
+                            <i class="fas fa-arrow-left"></i>
+                        </span>
+                        <div class="button-particles"></div>
+                    </a>
+                    
+                    <a href="#demo" class="secondary-button">
+                        <i class="fas fa-play"></i>
+                        <span>مشاهدة العرض</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">١٠٠٠+</div>
+                        <div class="stat-label">متعلم</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">٥٠+</div>
+                        <div class="stat-label">درس</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">٢٤/٧</div>
+                        <div class="stat-label">دعم</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="code-title">example.html</div>
+                    </div>
+                    <pre class="code-content">
+<code><span class="code-line"><span class="code-keyword">&lt;div</span> <span class="code-attr">class</span>=<span class="code-string">"container"</span><span class="code-keyword">&gt;</span></span>
+<span class="code-line">  <span class="code-keyword">&lt;h1&gt;</span>Hello World<span class="code-keyword">&lt;/h1&gt;</span></span>
+<span class="code-line">  <span class="code-keyword">&lt;p&gt;</span>Welcome to Web Development<span class="code-keyword">&lt;/p&gt;</span></span>
+<span class="code-line"><span class="code-keyword">&lt;/div&gt;</span></span></code>
+                    </pre>
+                </div>
+                
+                <div class="floating-elements">
+                    <div class="tech-bubble html">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-bubble css">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="tech-bubble js">
+                        <i class="fab fa-js"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-background">
+            <div class="gradient-sphere"></div>
+            <div class="grid-overlay"></div>
+        </div>
+    </section>
+
+    <section class="container roadmap-grid">
+        <div class="roadmap-card">
+            <a href="./html.html">
+                <i class="fas fa-code"></i>
+                <h3>HTML</h3>
+                <p>تعلم أساسيات HTML.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="./css.html">
+                <i class="fas fa-paint-brush"></i>
+                <h3>CSS</h3>
+                <p>تعلم كيفية تصميم صفحات الويب باستخدام CSS.</p>
+            </a>
+        </div>
+
+        <div class="roadmap-card">
+            <a href="./javascript.html">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>تعلم كيفية برمجة صفحات الويب باستخدام JavaScript.</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="testimonials">
+
+        <div class="testimonials-heading">
+            <h2>ماذا يقول المتعلمون؟</h2>
+        </div>
+        
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-profile">
+                    <img src="../assets/images/avatar1.jpg" alt="يوسف">
+                </div>
+                <div class="testimonial-content">
+                    <p>"كمبرمج حديث التخرج، كنت أبحث عن مصدر موثوق لتطوير مهاراتي في الويب. RegayWeb قدم لي مسارًا تعليميًا متكاملاً من الأساسيات إلى المستوى المتقدم. اليوم أعمل كمطور واجهات أمامية في شركة تقنية معروفة!"</p>
+                    <div class="testimonial-author">
+                        <span>يوسف</span>
+                        <div class="role">مطور واجهات أمامية . بغداد</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-profile">
+                    <img src="../assets/images/avatar3.jpg" alt="عبدالرحمن">
+                </div>
+                <div class="testimonial-content">
+                    <p>"كطالب في كلية الهندسة، كنت أبحث عن طريقة لتعلم تطوير المواقع. RegayWeb ساعدني في فهم أساسيات HTML و CSS و JavaScript بشكل عملي. الآن أستطيع العمل كمطور ويب بدوام جزئي مع دراستي!"</p>
+                    <div class="testimonial-author">
+                        <span>عبدالرحمن</span>
+                        <div class="role">طالب هندسة . الموصل</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-profile">
+                    <img src="../assets/images/avatar2.jpg" alt="نور">
+                </div>
+                <div class="testimonial-content">
+                    <p>"كمصممة ويب مبتدئة، وجدت في RegayWeb المنصة المثالية لتعلم البرمجة. أحببت أن المحتوى متوفر باللغة العربية وطريقة شرح HTML و CSS سهلة وعملية. الآن أستطيع تصميم مواقع كاملة بنفسي!"</p>
+                    <div class="testimonial-author">
+                        <span>نور</span>
+                        <div class="role">مصممة ويب . بغداد</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <!-- Animated Background -->
+        <div class="animated-bg">
+            <div class="gradient-sphere"></div>
+            <div class="particles"></div>
+        </div>
+
+        <div class="cta-wrapper container">
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+                <span class="progress-text">٧٠٪ من الطلاب ناجحون</span>
+            </div>
+
+            <div class="cta-content">
+                <div class="badge-container">
+                    <div class="badge primary">
+                        <span class="pulse"></span>
+                        <span class="badge-text">دعم ٢٤/٧</span>
+                    </div>
+                    <div class="badge secondary">
+                        <i class="fas fa-rocket"></i>
+                        <span class="badge-text">تعلم بسرعة</span>
+                    </div>
+                </div>
+                
+                <h2 class="glowing-text">ابدأ رحلتك الآن!</h2>
+                <p class="fade-in">تعلم المزيد عن لغات الويب وطور مهاراتك.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item" data-tilt>
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span>HTML, CSS, JS</span>
+                        <div class="feature-tooltip">لغات الويب الأساسية الثلاث</div>
+                    </div>
+                    <div class="feature-item" data-tilt>
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                            <div class="count-animation">1000+</div>
+                        </div>
+                        <span>متعلم</span>
+                    </div>
+                    <div class="feature-item" data-tilt>
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <span>فيديو تعليمي</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#roadmap" class="cta-btn primary">
+                        <span class="btn-content">
+                            <span class="btn-text">اكتشف مسار التعلم</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                        </span>
+                        <span class="btn-particles"></span>
+                    </a>
+                    <a href="#demo" class="cta-btn secondary">
+                        <i class="fas fa-play"></i>
+                        <span>شاهد العرض</span>
+                    </a>
+                </div>
+
+                <!-- Achievement Cards -->
+                <div class="achievements">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🎯</div>
+                        <div class="achievement-stats">
+                            <div class="counter">95%</div>
+                            <span>نسبة النجاح</span>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">⭐</div>
+                        <div class="achievement-stats">
+                            <div class="counter">4.8</div>
+                            <span>التقييم</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrows">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Elements -->
+            <div class="floating-elements">
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="editor-content">
+                        <pre><code class="language-javascript">
+// Your Web Journey
+const developer = {
+name: "You",
+level: "Beginner",
+goals: [
+    "Learn HTML",
+    "Master CSS",
+    "Build with JS"
+],
+progress: {
+    current: "Learning",
+    nextStep: "Success"
+}
+};</code></pre>
+                    </div>
+                </div>
+                
+                <div class="tech-orbit">
+                    <div class="orbit-circle"></div>
+                    <div class="tech-item" style="--delay: 0s"><i class="fab fa-html5"></i></div>
+                    <div class="tech-item" style="--delay: 2s"><i class="fab fa-css3-alt"></i></div>
+                    <div class="tech-item" style="--delay: 4s"><i class="fab fa-js"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-logo">
+                <span>طريق الويب</span>
+                <i class="fas fa-road"></i>
+            </div>
+            <p class="footer-description">
+                منصة تعليمية لتطوير الويب باللغة العربية، لتمكين الجميع من تعلم البرمجة.
+            </p>
+            <div class="social-links">
+                <a href="https://facebook.com" aria-label="فيسبوك">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" aria-label="تويتر">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" aria-label="لينكد إن">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" aria-label="جيت هب">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">روابط مهمة</h3>
+            <ul class="footer-links">
+                <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+                <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+                <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">اتصل بنا</h3>
+            <ul class="footer-links">
+                <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> العراق، كردستان</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>خارطة تطوير لويب ٢٠٢٤. جميع الحقوق محفوظة لفريقنا &copy;</p>
+        <nav class="language-selector">
+            <a href="../index.html">كردي</a>
+            <a href="./index.html" class="active">عربي</a>
+            <a href="../en/index.html">إنجليزي</a>
+        </nav>
+    </div>
+</footer>
+</div>
+</body>
+</html>

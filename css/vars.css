@@ -1,0 +1,25 @@
+:root {
+    --bg-color: #0f172a;
+    --text-color: #cbd5e1;
+    --accent-color: #a855f7;
+    --secondary-bg: #1e293b;
+    --button-color: #3b82f6;
+    --button-hover-color: #2563eb;
+
+    --border-radius: 8px;
+    --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+
+    --transition-fast: 0.3s;
+    --transition-slow: 0.5s;
+
+    --glow: 0 0 20px rgba(168, 85, 247, 0.5);
+
+    --accent-color-rgb: 59, 130, 246;
+    --text-color-secondary: #64748b;
+
+    --grid-color: rgba(255, 255, 255, 0.1);
+}

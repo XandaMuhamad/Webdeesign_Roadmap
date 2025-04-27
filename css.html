@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Roadmap - CSS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/dark-mode.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/mediaQuery.css">
+  <link rel="stylesheet" href="./css/css-styles.css">
+</head>
+<body>
+<input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+<div class="content">
+  <header>
+    <div class="container">
+        <div class="logo"><span class="navbar-logo">ڕیگای وێب</span> <i class="fas fa-road"></i></div>
+        <!-- HTML -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="nav-toggle-icon"></span>
+        </label>
+        <nav class="nav-menu-dropdown" aria-label="Main Navigation">
+            <div class="search-container">
+                <input type="search" 
+                       class="search-box" 
+                       placeholder="گەڕان لە ناوەڕۆکەکان..." 
+                       aria-label="Search">
+                <i class="fas fa-search search-icon"></i>
+                
+                <div class="search-results">
+                    <div class="search-result-item">
+                        <i class="fas fa-code"></i>
+                        <span>HTML بنەڕەتەکانی</span>
+                    </div>
+                    <div class="search-result-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>CSS فێربوونی</span>
+                    </div>
+                    <div class="search-result-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript چییە؟</span>
+                    </div>
+                </div>
+            </div>
+
+            <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+            <a href="index.html" class="nav-link ">ماڵەوە <i class="fas fa-home"></i></a>
+            <a href="./html.html" class="nav-link"> HTML<i class="fas fa-code"></i></a>
+            <a href="./css.html" class="nav-link active"> CSS<i class="fas fa-paint-brush"></i></a>
+            <a href="./javascript.html" class="nav-link "> JavaScript<i class="fab fa-js"></i></a>
+            <a href="./about.html" class="nav-link ">دەربارە <i class="fas fa-users"></i></a>
+            
+        </nav>
+    </div>
+</header>
+
+  <main>
+    <section class="css-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">فێربوونی CSS</span>
+                    <div class="style-decoration">{ }</div>
+                </h1>
+
+                <p class="hero-description">
+                    فێری <span class="highlight">CSS</span> ببە بۆ 
+                    <span class="typing-container">
+                        <span class="typing-text">
+                            <span class="word">دیزاینی وێب</span>
+                            <span class="word">ڕازاندنەوەی ماڵپەڕ</span>
+                            <span class="word">دروستکردنی ستایل</span>
+                        </span>
+                    </span>
+                </p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fas fa-palette"></i>
+                        <span>ستایلی ڕەنگەکان</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-th"></i>
+                        <span>فلێکس و گرید</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-magic"></i>
+                        <span>ئەنیمەیشن</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#start-learning" class="primary-button">
+                        <span class="button-content">دەست پێبکە
+                            <i class="fas fa-arrow-left"></i>
+                        </span>
+                    </a>
+                    
+                    <a href="#course-outline" class="secondary-button">
+                        <i class="fas fa-list"></i>
+                        <span>ناوەڕۆکی کۆرس</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <div class="editor-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="file-name">styles.css</span>
+                    </div>
+                    <div class="editor-content">
+                        <pre><code class="language-css">
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: linear-gradient(
+        45deg, 
+        #2196F3, 
+        #00BCD4
+    );
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}</code></pre>
+                    </div>
+                </div>
+
+                <div class="floating-elements">
+                    <div class="css-property">color: #2196F3;</div>
+                    <div class="css-property">margin: 2rem;</div>
+                    <div class="css-property">padding: 1rem;</div>
+                    <div class="css-property">display: flex;</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-background">
+            <div class="gradient-sphere"></div>
+            <div class="grid-overlay"></div>
+            <div class="css-symbols">{ }</div>
+        </div>
+    </section>
+
+    <section class="container roadmap-grid">
+      <div class="roadmap-card">
+        <a href="#modal-selectors">
+          <i class="fas fa-mouse-pointer"></i>
+          <h3>هەڵبژێرەکان و تایبەتمەندییەکان</h3>
+          <p>فێربە چۆن CSS هەڵدەبژێرێت و شێواز دەدات بە توخمەکانی HTML.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-box-model">
+          <i class="fas fa-box"></i>
+          <h3>مۆدێلی بۆکس</h3>
+          <p>تێبگە لە مۆدێلی بۆکسی CSS و چۆنیەتی کارکردنی پەراوێز، سنوور و پادینگ.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-display">
+          <i class="fas fa-columns"></i>
+          <h3>تایبەتمەندییەکانی پیشاندان</h3>
+          <p>شارەزای تایبەتمەندییە جیاوازەکانی پیشاندان ببە لە CSS، وەک block، inline و flexbox.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-units">
+          <i class="fas fa-ruler"></i>
+          <h3>یەکەکانی CSS</h3>
+          <p>فێری یەکە ڕەها و ڕێژەییەکان ببە لە CSS، وەک px، % و em.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-flexbox">
+          <i class="fas fa-align-justify"></i>
+          <h3>فلێکس بۆکس</h3>
+          <p>شارەزای مۆدێلی لەیاوتی فلێکس بۆکس ببە بۆ دیزاینی وەڵامدەر.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-grid">
+          <i class="fas fa-th"></i>
+          <h3>گرید CSS</h3>
+          <p>فێری لەیاوتی گریدی CSS ببە بۆ دروستکردنی لەیاوتی ئاڵۆز.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-animations">
+          <i class="fas fa-play"></i>
+          <h3>ئەنیمەیشنەکانی CSS</h3>
+          <p>فێربە چۆن ئەنیمەیشن و گواستنەوە دروست دەکەیت لە CSS.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-colors">
+          <i class="fas fa-palette"></i>
+          <h3>ڕەنگەکان</h3>
+          <p>فێربە چۆن ڕەنگەکان بەکاردەهێنیت لە CSS بۆ ڕازاندنەوەی پەڕەکانی وێب.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-typography">
+          <i class="fas fa-font"></i>
+          <h3>تایپۆگرافی</h3>
+          <p>تێبگە لە چۆنیەتی ڕازاندنەوەی دەق بە بەکارهێنانی تایبەتمەندییەکانی تایپۆگرافی CSS.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="modal-selectors" class="modal">
+      <div class="modal-content">
+        <h2>هەڵبژێرەکان و تایبەتمەندییەکان</h2>
+        <p>هەڵبژێرەکانی CSS نەخشەن کە بەکاردێن بۆ هەڵبژاردنی ئەو توخمانەی دەتەوێت شێوازیان پێ بدەیت. هەڵبژێرە باوەکان ئەمانەن:</p>
+        <ul>
+          <li><strong>هەڵبژێری توخم</strong> – توخمەکان بە ناوی تاگەکانیان دەستنیشان دەکات (بۆ نموونە، <code>p</code>)</li>
+          <li><strong>هەڵبژێری کڵاس</strong> – توخمەکان بە کڵاسەکانیان دەستنیشان دەکات (بۆ نموونە، <code>.class-name</code>)</li>
+          <li><strong>هەڵبژێری ID</strong> – توخمەکان بە ID-یەکانیان دەستنیشان دەکات (بۆ نموونە، <code>#id-name</code>)</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="selector">p</span> {
+  <span class="property">color</span>: <span class="value">blue</span>;
+}
+
+<span class="selector">.class-name</span> {
+  <span class="property">font-size</span>: <span class="value">16px</span>;
+}
+
+<span class="selector">#id-name</span> {
+  <span class="property">margin</span>: <span class="value">10px</span>;
+}</code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <p style="color: blue;">ئەمە پاراگرافێکە کە ڕەنگەکەی شینە</p>
+          <p class="class-name" style="font-size: 16px;">ئەمە پاراگرافێکە کە قەبارەی فۆنتەکەی ١٦ پیکسڵە</p>
+          <p id="id-name" style="margin: 10px;">ئەمە پاراگرافێکە کە پەراوێزەکەی ١٠ پیکسڵە</p>
+        </div>
+
+        <a href="#selectors" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="selectors" class="hidden-close"></a>
+
+
+    <section id="modal-box-model" class="modal">
+      <div class="modal-content">
+        <h2>مۆدێلی بۆکس</h2>
+        <p>مۆدێلی بۆکسی CSS گرنگە بۆ تێگەیشتن لە لەیاوت و دیزاین. پێکهاتووە لە:</p>
+        <ul>
+          <li><strong>ناوەڕۆک</strong> – ناوەڕۆکی ڕاستەقینەی بۆکسەکە، وەک دە یان وێنە</li>
+          <li><strong>پادینگ</strong> – ناوچەیەک پاک دەکاتەوە لە دەوری ناوەڕۆک، لە ناو سنوورەکە</li>
+          <li><strong>سنوور</strong> – سنوورێک کە دەچێتە دەوری پادینگ و ناوەڕۆک</li>
+          <li><strong>مارجن</strong> – ناوچەیەک پاک دەکاتەوە لە دەرەوەی سنوور، توخمەکە لە ئەوانی تر جیا دەکاتەوە</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="selector">div</span> {
+  <span class="property">padding</span>: <span class="value">10px</span>;
+  <span class="property">border</span>: <span class="value">1px solid black</span>;
+  <span class="property">margin</span>: <span class="value">20px</span>;
+  <span class="property">background-color</span>: <span class="value">#f0f0f0</span>;
+}</code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <div style="
+            padding: 10px;
+            border: 1px solid black;
+            margin: 20px;
+            background-color: #f0f0f0;
+          ">
+            ئەمە بۆکسێکە کە پادینگ، سنوور و مارجنی هەیە
+          </div>
+        </div>
+
+        <a href="#box" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="box" class="hidden-close"></a>
+
+
+    <section id="modal-display" class="modal">
+      <div class="modal-content">
+        <h2>تایبەتمەندییەکانی پیشاندان</h2>
+        <p>تایبەتمەندییەکانی پیشاندانی CSS دیاری دەکەن کە چۆن توخمەکان لەسەر شاشە پیشان دەدرێن. بەهاکانی باو ئەمانەن:</p>
+        <ul>
+          <li><strong>block</strong> – توخمەکە هەموو پانییەکی بەردەست دەگرێت، لە هێڵێکی نوێوە دەست پێدەکات</li>
+          <li><strong>inline</strong> – توخمەکە تەنها ئەوەندە پانی دەگرێت کە ناوەڕۆکەکەی پێویستیەتی، بەبێ دەستپێکردن لە هێڵێکی نوێ</li>
+          <li><strong>flex</strong> – لەیاوتی بۆکسی نەرم چالاک دەکات، گونجاوە بۆ دیزاینی وەڵامدەر</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="selector">.block-element</span> {
+  <span class="property">display</span>: <span class="value">block</span>;
+}
+
+<span class="selector">.inline-element</span> {
+  <span class="property">display</span>: <span class="value">inline</span>;
+}
+
+<span class="selector">.flex-container</span> {
+  <span class="property">display</span>: <span class="value">flex</span>;
+}</code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <div style="margin-bottom: 20px;">
+            <div style="display: block; background-color: var(--accent-color); padding: 10px; margin: 5px;">
+              توخمی block
+            </div>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <span style="display: inline; background-color: var(--accent-color); padding: 10px; margin: 5px;">
+              توخمی inline
+            </span>
+            <span style="display: inline; background-color: var(--accent-color); padding: 10px; margin: 5px;">
+              توخمی inline
+            </span>
+          </div>
+
+          <div style="
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--secondary-bg);
+            padding: 10px;
+          ">
+            <div style="background-color: var(--accent-color); padding: 10px;">flex ١</div>
+            <div style="background-color: var(--accent-color); padding: 10px;">flex ٢</div>
+            <div style="background-color: var(--accent-color); padding: 10px;">flex ٣</div>
+          </div>
+        </div>
+
+        <a href="#display" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="display" class="hidden-close"></a>
+
+
+    <section id="modal-units" class="modal">
+      <div class="modal-content">
+        <h2>یەکەکانی CSS</h2>
+        <p>یەکەکانی CSS درێژی، پانی و دووری لە شێوازدا دیاری دەکەن. یەکە باوەکان ئەمانەن:</p>
+        <ul>
+          <li><strong>px</strong> – پیکسڵ، یەکەیەکی ڕەها</li>
+          <li><strong>%</strong> – پەیوەندیدارە بە توخمی باوک</li>
+          <li><strong>em</strong> – پەیوەندیدارە بە قەبارەی فۆنتی توخمەکە</li>
+          <li><strong>rem</strong> – پەیوەندیدارە بە قەبارەی فۆنتی توخمی ڕەگ</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="selector">div</span> {
+  <span class="property">width</span>: <span class="value">100px</span>;
+  <span class="property">height</span>: <span class="value">50%</span>;
+  <span class="property">padding</span>: <span class="value">1em</span>;
+  <span class="property">margin</span>: <span class="value">2rem</span>;
+}</code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <div style="
+            width: 100px;
+            height: 50px;
+            padding: 1em;
+            margin: 2rem;
+            background-color: var(--accent-color);
+          ">
+            بۆکسێک بە یەکە جیاوازەکان
+          </div>
+        </div>
+
+        <a href="#units" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="units" class="hidden-close"></a>
+
+
+    <section id="modal-flexbox" class="modal">
+      <div class="modal-content">
+        <h2>فلێکس بۆکس</h2>
+        <p>فلێکس بۆکس مۆدێلێکی لەیاوتە کە ڕێگە دەدات بە توخمەکان ڕێک بخرێن و بۆشایی لە ناو کۆنتەینەرێکدا دابەش بکرێت. تایبەتمەندییە سەرەکییەکان ئەمانەن:</p>
+        <ul>
+          <li><strong>flex-direction</strong> – ئاراستەی توخمەکانی فلێکس دیاری دەکات</li>
+          <li><strong>justify-content</strong> – توخمەکان لە تەوەری سەرەکی ڕێک دەخات</li>
+          <li><strong>align-items</strong> – توخمەکان لە تەوەری لاوەکی ڕێک دەخات</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="selector">.flex-container</span> {
+  <span class="property">display</span>: <span class="value">flex</span>;
+  <span class="property">flex-direction</span>: <span class="value">row</span>;
+  <span class="property">justify-content</span>: <span class="value">center</span>;
+  <span class="property">align-items</span>: <span class="value">center</span>;
+}</code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <div style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--secondary-bg);
+            padding: 20px;
+          ">
+            <div style="background-color: var(--accent-color); padding: 20px;">١</div>
+            <div style="background-color: var(--accent-color); padding: 20px;">٢</div>
+            <div style="background-color: var(--accent-color); padding: 20px;">٣</div>
+          </div>
+        </div>
+
+        <a href="#flexbox" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="flexbox" class="hidden-close"></a>
+
+
+    <section id="modal-grid" class="modal">
+      <div class="modal-content">
+        <h2>تۆڕی CSS</h2>
+        <p>لەیاوتی تۆڕی CSS سیستەمێکی دوو-ڕەهەندییە بۆ وێب. چەمکە سەرەکییەکان ئەمانەن:</p>
+        <ul>
+          <li><strong>grid-template-columns</strong> – ستوونەکانی تۆڕەکە دیاری دەکات</li>
+          <li><strong>grid-template-rows</strong> – ڕیزەکانی تۆڕەکە دیاری دەکات</li>
+          <li><strong>grid-gap</strong> – بۆشایی نێوان ڕیز و ستوونەکان دیاری دەکات</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="selector">.grid-container</span> {
+  <span class="property">display</span>: <span class="value">grid</span>;
+  <span class="property">grid-template-columns</span>: <span class="value">repeat(3, 1fr)</span>;
+  <span class="property">grid-template-rows</span>: <span class="value">auto</span>;
+  <span class="property">grid-gap</span>: <span class="value">10px</span>;
+}</code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <div style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 10px;
+            background-color: var(--secondary-bg);
+            padding: 20px;
+          ">
+            <div style="background-color: var(--accent-color); padding: 20px;">١</div>
+            <div style="background-color: var(--accent-color); padding: 20px;">٢</div>
+            <div style="background-color: var(--accent-color); padding: 20px;">٣</div>
+            <div style="background-color: var(--accent-color); padding: 20px;">٤</div>
+            <div style="background-color: var(--accent-color); padding: 20px;">٥</div>
+            <div style="background-color: var(--accent-color); padding: 20px;">٦</div>
+          </div>
+        </div>
+
+        <a href="#grid" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="grid" class="hidden-close"></a>
+
+
+    <section id="modal-animations" class="modal">
+      <div class="modal-content">
+        <h2>جووڵەکانی CSS</h2>
+        <p>جووڵەکانی CSS ڕێگەت پێدەدات جووڵە دروست بکەیت لە نێوان شێوازەکانی CSS. تایبەتمەندییە سەرەکییەکان ئەمانەن:</p>
+        <ul>
+          <li><strong>animation-name</strong> – ناوی جووڵەکە دیاری دەکات لە @keyframes</li>
+          <li><strong>animation-duration</strong> – ماوەی جووڵەکە دیاری دەکات</li>
+          <li><strong>animation-timing-function</strong> – هێڵکاری خێرایی جووڵەکە دیاری دەکات</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="keyword">@keyframes</span> <span class="function">example</span> {
+  <span class="selector">from</span> { <span class="property">background-color</span>: <span class="value">red</span>; }
+  <span class="selector">to</span> { <span class="property">background-color</span>: <span class="value">yellow</span>; }
+}
+
+<span class="selector">div</span> {
+  <span class="property">animation-name</span>: <span class="value">example</span>;
+  <span class="property">animation-duration</span>: <span class="value">4s</span>;
+  <span class="property">animation-timing-function</span>: <span class="value">ease-in-out</span>;
+}</code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <div style="
+            width: 100px;
+            height: 100px;
+            animation: example 4s ease-in-out infinite;
+          ">
+            بۆکسێکی جووڵاو
+          </div>
+        </div>
+
+        <style>
+          @keyframes example {
+            from { background-color: red; }
+            to { background-color: yellow; }
+          }
+        </style>
+
+        <a href="#animations" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="animations" class="hidden-close"></a>
+
+
+    <section id="modal-colors" class="modal">
+      <div class="modal-content">
+        <h2>ڕەنگەکان</h2>
+        <p>CSS ڕێگەت پێدەدات ڕەنگ بدەیت بە دەق، پاشبنەما، سنوور و توخمەکانی تر. شێوازە باوەکانی دیاریکردنی ڕەنگ ئەمانەن:</p>
+        <ul>
+          <li><strong>شازدەیی</strong> – بۆ نموونە، <code>#ff0000</code> بۆ سوور</li>
+          <li><strong>RGB</strong> – بۆ نموونە، <code>rgb(255, 0, 0)</code> بۆ سوور</li>
+          <li><strong>RGBA</strong> – بۆ نموونە، <code>rgba(255, 0, 0, 0.5)</code> بۆ سووری نیوە ڕوون</li>
+          <li><strong>ناوی ڕەنگەکان</strong> – بۆ نموونە، <code>red</code></li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="selector">p</span> {
+  <span class="property">color</span>: <span class="value">#ff0000</span>;
+  <span class="property">background-color</span>: <span class="value">rgba(0, 0, 255, 0.1)</span>;
+}</code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <p style="
+            color: #ff0000;
+            background-color: rgba(0, 0, 255, 0.1);
+            padding: 10px;
+          ">
+            ئەمە دەقێکە بە ڕەنگی سوور و پاشبنەمایەکی شینی کاڵ
+          </p>
+        </div>
+
+        <a href="#colors" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="colors" class="hidden-close"></a>
+
+
+    <section id="modal-typography" class="modal">
+      <div class="modal-content">
+        <h2>تایپۆگرافی</h2>
+        <p>تایپۆگرافی لە CSS پەیوەندی بە شێوازدانی دەقەوە هێڵکاری دەکات. تایبەتمەندییە سەرەکییەکان ئەمانەن:</p>
+        <ul>
+          <li><strong>font-family</strong> – جۆری فۆنت دیاری دەکات</li>
+          <li><strong>font-size</strong> – قەبارەی دەق دیاری دەکات</li>
+          <li><strong>font-weight</strong> – ئەستووری دەق دیاری دەکات</li>
+          <li><strong>line-height</strong> – بۆشایی نێوان هێڵەکان دیاری دەکات</li>
+        </ul>
+
+        <h3>کۆد:</h3>
+        <pre><code><span class="selector">p</span> {
+  <span class="property">font-family</span>: <span class="value">'Arial, sans-serif'</span>;
+  <span class="property">font-size</span>: <span class="value">16px</span>;
+  <span class="property">font-weight</span>: <span class="value">bold</span>;
+  <span class="property">line-height</span>: <span class="value">1.5</span>;
+}</code></pre>
+
+        <h3>دەرئەنجام:</h3>
+        <div class="code-output">
+          <p style="
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.5;
+          ">
+            ئەمە نموونەیەکە لە دەقێک کە شێوازی تایپۆگرافی پێدراوە. بۆ نیشاندانی line-height، با چەند دێڕێک زیاد بکەین.
+            <br>
+            ئەمە دێڕی دووەمە.
+            <br>
+            ئەمەش دێڕی سێیەم.
+          </p>
+        </div>
+
+        <a href="#typography" class="close-btn">داخستن</a>
+      </div>
+    </section>
+    <a id="typography" class="hidden-close"></a>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-logo">
+                <span>ڕیگای وێب</span>
+                <i class="fas fa-road"></i>
+            </div>
+            <p class="footer-description">
+                پلاتفۆرمێکی فێرکاری بۆ فێربوونی گەشەپێدانی وێب بە زمانی کوردی، بۆ ئەوەی هەموو کەسێک بتوانێت فێری پرۆگرامینگ ببێت.
+            </p>
+            <div class="social-links">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section" dir="ltr">
+            <h3 class="footer-heading">بەستەرە گرنگەکان</h3>
+            <ul class="footer-links">
+                <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+                <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+                <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section" dir="ltr">
+            <h3 class="footer-heading">پەیوەندی</h3>
+            <ul class="footer-links">
+                <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> کوردستان، عێراق</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>نەخشەی فێربوونی وێب دیزاین ٢٠٢٤. گشت مافەکان پارێزراوە لە لایەن تیمی ئێمە &copy;</p>
+        <nav class="language-selector">
+            <a href="./index.html" class="active">کوردی</a>
+            <a href="./ar/index.html">عەرەبی</a>
+            <a href="./en/index.html">ئینگلیزی</a>
+        </nav>
+    </div>
+</footer>
+</div>
+</body>
+</html>

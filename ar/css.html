@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خارطة طريق CSS</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="stylesheet" href="../css/dark-mode.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/mediaQuery.css">
+  <link rel="stylesheet" href="../css/css-styles.css">
+</head>
+<body>
+<input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+<div class="content">
+  <header>
+    <div class="container">
+        <div class="logo"><span class="navbar-logo">طريق الويب</span> <i class="fas fa-road"></i></div>
+        <!-- HTML -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="nav-toggle-icon"></span>
+        </label>
+        <nav class="nav-menu-dropdown" aria-label="التنقل الرئيسي">
+            <div class="search-container">
+                <input type="search" 
+                       class="search-box" 
+                       placeholder="ابحث في المحتوى..." 
+                       aria-label="بحث">
+                <i class="fas fa-search search-icon"></i>
+                
+                <div class="search-results">
+                    <div class="search-result-item">
+                        <i class="fas fa-code"></i>
+                        <span>أساسيات HTML</span>
+                    </div>
+                    <div class="search-result-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>تعلم CSS</span>
+                    </div>
+                    <div class="search-result-item">
+                        <i class="fab fa-js"></i>
+                        <span>ما هو JavaScript؟</span>
+                    </div>
+                </div>
+            </div>
+
+            <label for="dark-mode-toggle" class="dark-mode-label nav-link">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+            <a href="index.html" class="nav-link ">الرئيسية <i class="fas fa-home"></i></a>
+            <a href="./html.html" class="nav-link">HTML <i class="fas fa-code"></i></a>
+            <a href="./css.html" class="nav-link active">CSS <i class="fas fa-paint-brush"></i></a>
+            <a href="./javascript.html" class="nav-link">JavaScript <i class="fab fa-js"></i></a>
+            <a href="./about.html" class="nav-link ">من نحن <i class="fas fa-users"></i></a>
+
+        </nav>
+    </div>
+</header>
+
+  <main>
+    <section class="css-hero">
+      <div class="hero-container">
+          <div class="hero-content">
+              <div class="hero-badge">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS3</span>
+              </div>
+              
+              <h1 class="hero-title">
+                  <span class="gradient-text">تعلم CSS</span>
+                  <div class="style-decoration">{ }</div>
+              </h1>
+
+              <p class="hero-description">
+                  تعلم <span class="highlight">CSS</span> من أجل 
+                  <span class="typing-container">
+                      <span class="typing-text">
+                          <span class="word">تصميم الويب</span>
+                          <span class="word">تنسيق المواقع</span>
+                          <span class="word">إنشاء الأنماط</span>
+                      </span>
+                  </span>
+              </p>
+
+              <div class="feature-list">
+                  <div class="feature-item">
+                      <i class="fas fa-palette"></i>
+                      <span>أنماط الألوان</span>
+                  </div>
+                  <div class="feature-item">
+                      <i class="fas fa-th"></i>
+                      <span>فلكس وجريد</span>
+                  </div>
+                  <div class="feature-item">
+                      <i class="fas fa-magic"></i>
+                      <span>الحركات</span>
+                  </div>
+              </div>
+
+              <div class="hero-actions">
+                  <a href="#start-learning" class="primary-button">
+                      <span class="button-content">ابدأ الآن
+                          <i class="fas fa-arrow-left"></i>
+                      </span>
+                  </a>
+                  
+                  <a href="#course-outline" class="secondary-button">
+                      <i class="fas fa-list"></i>
+                      <span>محتوى الدورة</span>
+                  </a>
+              </div>
+          </div>
+
+          <div class="hero-visual">
+              <div class="code-editor">
+                  <div class="editor-header">
+                      <div class="editor-dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </div>
+                      <span class="file-name">styles.css</span>
+                  </div>
+                  <div class="editor-content">
+                                    <pre><code class="language-css">
+              .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+
+              .card {
+                background: linear-gradient(
+                    45deg, 
+                    #2196F3, 
+                    #00BCD4
+                );
+                border-radius: 8px;
+                padding: 2rem;
+                box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+                transform: translateY(0);
+                transition: transform 0.3s ease;
+              }
+
+              .card:hover {
+                transform: translateY(-10px);
+              }</code></pre>
+                  </div>
+              </div>
+
+              <div class="floating-elements">
+                  <div class="css-property">color: #2196F3;</div>
+                  <div class="css-property">margin: 2rem;</div>
+                  <div class="css-property">padding: 1rem;</div>
+                  <div class="css-property">display: flex;</div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="hero-background">
+          <div class="gradient-sphere"></div>
+          <div class="grid-overlay"></div>
+          <div class="css-symbols">{ }</div>
+      </div>
+  </section>
+
+    <section class="container roadmap-grid">
+      <div class="roadmap-card">
+        <a href="#modal-selectors">
+          <i class="fas fa-mouse-pointer"></i>
+          <h3>المحددات</h3>
+          <p>تعلم عن محددات CSS وكيفية استخدامها.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-box-model">
+          <i class="fas fa-box"></i>
+          <h3>نموذج الصندوق</h3>
+          <p>فهم نموذج الصندوق في CSS ومكوناته.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-display">
+          <i class="fas fa-desktop"></i>
+          <h3>العرض</h3>
+          <p>تعلم عن خصائص العرض المختلفة في CSS.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-units">
+          <i class="fas fa-ruler"></i>
+          <h3>الوحدات</h3>
+          <p>فهم الوحدات المختلفة المستخدمة في CSS.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-flexbox">
+          <i class="fas fa-align-center"></i>
+          <h3>Flexbox</h3>
+          <p>تعلم عن نموذج تخطيط Flexbox في CSS.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-grid">
+          <i class="fas fa-th"></i>
+          <h3>الشبكة</h3>
+          <p>فهم نظام تخطيط الشبكة في CSS.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-animations">
+          <i class="fas fa-play"></i>
+          <h3>الرسوم المتحركة</h3>
+          <p>تعلم عن الرسوم المتحركة والانتقالات في CSS.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-colors">
+          <i class="fas fa-palette"></i>
+          <h3>الألوان</h3>
+          <p>فهم كيفية استخدام الألوان في CSS.</p>
+        </a>
+      </div>
+
+      <div class="roadmap-card">
+        <a href="#modal-typography">
+          <i class="fas fa-font"></i>
+          <h3>الطباعة</h3>
+          <p>تعلم عن الطباعة وتنسيق النصوص في CSS.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="modal-selectors" class="modal">
+      <div class="modal-content">
+        <h2>المحددات</h2>
+        <p>تُستخدم محددات CSS لتحديد العناصر التي تريد تنسيقها. تشمل المحددات الشائعة:</p>
+        <ul>
+          <li><strong>محدد العنصر</strong> – يحدد جميع العناصر من نوع معين.</li>
+          <li><strong>محدد الفئة</strong> – يحدد جميع العناصر التي تحتوي على فئة معينة.</li>
+          <li><strong>محدد المعرف</strong> – يحدد عنصرًا واحدًا بمعرف معين.</li>
+        </ul>
+        <pre>
+p {
+  color: blue;
+}
+.class-name {
+  font-size: 16px;
+}
+#id-name {
+  margin: 10px;
+}
+        </pre>
+        <a href="#selectors" class="close-btn">إغلاق</a>
+      </div>
+    </section>
+    <a id="selectors" class="hidden-close"></a>
+
+    <section id="modal-box-model" class="modal">
+      <div class="modal-content">
+        <h2>نموذج الصندوق</h2>
+        <p>يصف نموذج الصندوق في CSS الصناديق المستطيلة التي يتم إنشاؤها للعناصر في شجرة المستند ويتكون من:</p>
+        <ul>
+          <li><strong>المحتوى</strong> – المحتوى الفعلي للصندوق، حيث تظهر النصوص والصور.</li>
+          <li><strong>الحشو</strong> – يفرغ منطقة حول المحتوى. الحشو شفاف.</li>
+          <li><strong>الحدود</strong> – حد يحيط بالحشو (إن وجد) والمحتوى.</li>
+          <li><strong>الهامش</strong> – يفرغ منطقة خارج الحدود. الهامش شفاف.</li>
+        </ul>
+        <pre>
+div {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 20px;
+}
+        </pre>
+        <a href="#box-model" class="close-btn">إغلاق</a>
+      </div>
+    </section>
+    <a id="box-model" class="hidden-close"></a>
+
+    <section id="modal-display" class="modal">
+      <div class="modal-content">
+        <h2>العرض</h2>
+        <p>تحدد خاصية العرض سلوك العرض (نوع صندوق العرض) للعنصر. تشمل القيم الشائعة:</p>
+        <ul>
+          <li><strong>block</strong> – يتم عرض العنصر كعنصر على مستوى الكتلة.</li>
+          <li><strong>inline</strong> – يتم عرض العنصر كعنصر على مستوى السطر.</li>
+          <li><strong>flex</strong> – يتم عرض العنصر كحاوية مرنة على مستوى الكتلة.</li>
+        </ul>
+        <pre>
+.block-element {
+  display: block;
+}
+.inline-element {
+  display: inline;
+}
+.flex-container {
+  display: flex;
+}
+        </pre>
+        <a href="#display" class="close-btn">إغلاق</a>
+      </div>
+    </section>
+    <a id="display" class="hidden-close"></a>
+
+    <section id="modal-units" class="modal">
+      <div class="modal-content">
+        <h2>الوحدات</h2>
+        <p>لدى CSS عدة وحدات مختلفة للتعبير عن الطول. تشمل الوحدات الشائعة:</p>
+        <ul>
+          <li><strong>px</strong> – البكسل.</li>
+          <li><strong>%</strong> – النسبة المئوية.</li>
+          <li><strong>em</strong> – نسبة إلى حجم الخط للعنصر.</li>
+          <li><strong>rem</strong> – نسبة إلى حجم الخط للعنصر الجذري.</li>
+        </ul>
+        <pre>
+div {
+  width: 100px;
+  height: 50%;
+  padding: 1em;
+  margin: 2rem;
+}
+        </pre>
+        <a href="#units" class="close-btn">إغلاق</a>
+      </div>
+    </section>
+    <a id="units" class="hidden-close"></a>
+
+    <section id="modal-flexbox" class="modal">
+      <div class="modal-content">
+        <h2>Flexbox</h2>
+        <p>يُسهل نموذج تخطيط الصندوق المرن في CSS تصميم هيكل تخطيط مرن مستجيب دون استخدام التطفو أو التمركز.</p>
+        <ul>
+          <li><strong>display</strong> – يحدد حاوية مرنة.</li>
+          <li><strong>flex-direction</strong> – يحدد اتجاه العناصر المرنة.</li>
+          <li><strong>justify-content</strong> – يحاذي العناصر المرنة على طول المحور الرئيسي.</li>
+          <li><strong>align-items</strong> – يحاذي العناصر المرنة على طول المحور العرضي.</li>
+        </ul>
+        <pre>
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+        </pre>
+        <a href="#flexbox" class="close-btn">إغلاق</a>
+      </div>
+    </section>
+    <a id="flexbox" class="hidden-close"></a>
+
+    <section id="modal-grid" class="modal">
+      <div class="modal-content">
+        <h2>الشبكة</h2>
+        <p>يوفر نموذج تخطيط الشبكة في CSS نظام تخطيط قائم على الشبكة، مع صفوف وأعمدة، مما يسهل تصميم صفحات الويب دون الحاجة إلى استخدام التطفو والتمركز.</p>
+        <ul>
+          <li><strong>display</strong> – يحدد حاوية الشبكة.</li>
+          <li><strong>grid-template-columns</strong> – يحدد أعمدة الشبكة.</li>
+          <li><strong>grid-template-rows</strong> – يحدد صفوف الشبكة.</li>
+          <li><strong>grid-gap</strong> – يحدد الفجوة بين عناصر الشبكة.</li>
+        </ul>
+        <pre>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+        </pre>
+        <a href="#grid" class="close-btn">إغلاق</a>
+      </div>
+    </section>
+    <a id="grid" class="hidden-close"></a>
+
+    <section id="modal-animations" class="modal">
+      <div class="modal-content">
+        <h2>الرسوم المتحركة في CSS</h2>
+        <p>تسمح الرسوم المتحركة في CSS بتحريك الانتقالات بين أنماط CSS. تشمل الخصائص الرئيسية:</p>
+        <ul>
+          <li><strong>animation-name</strong> – يحدد اسم الرسوم المتحركة @keyframes.</li>
+          <li><strong>animation-duration</strong> – يحدد مدة الرسوم المتحركة.</li>
+          <li><strong>animation-timing-function</strong> – يحدد منحنى سرعة الرسوم المتحركة.</li>
+        </ul>
+        <pre>
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+div {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+        </pre>
+        <a href="#animations" class="close-btn">إغلاق</a>
+      </div>
+    </section>
+    <a id="animations" class="hidden-close"></a>
+
+    <section id="modal-colors" class="modal">
+      <div class="modal-content">
+        <h2>الألوان</h2>
+        <p>تسمح CSS بتعيين الألوان للنصوص والخلفيات والحدود والعناصر الأخرى. تشمل الطرق الشائعة لتحديد الألوان:</p>
+        <ul>
+          <li><strong>السداسي العشري</strong> – مثل <code>#ff0000</code> للأحمر.</li>
+          <li><strong>RGB</strong> – مثل <code>rgb(255, 0, 0)</code> للأحمر.</li>
+          <li><strong>RGBA</strong> – مثل <code>rgba(255, 0, 0, 0.5)</code> للأحمر مع 50% شفافية.</li>
+          <li><strong>الألوان المسماة</strong> – مثل <code>red</code>.</li>
+        </ul>
+        <pre>
+p {
+  color: #ff0000;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+        </pre>
+        <a href="#colors" class="close-btn">إغلاق</a>
+      </div>
+    </section>
+    <a id="colors" class="hidden-close"></a>
+
+    <section id="modal-typography" class="modal">
+      <div class="modal-content">
+        <h2>الطباعة</h2>
+        <p>تشمل الطباعة في CSS تنسيق النصوص. تشمل الخصائص الرئيسية:</p>
+        <ul>
+          <li><strong>font-family</strong> – يحدد الخط.</li>
+          <li><strong>font-size</strong> – يحدد حجم النص.</li>
+          <li><strong>font-weight</strong> – يحدد سمك النص.</li>
+          <li><strong>line-height</strong> – يحدد المسافة بين سطور النص.</li>
+        </ul>
+        <pre>
+p {
+  font-family: 'Arial, sans-serif';
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+        </pre>
+        <a href="#typography" class="close-btn">إغلاق</a>
+      </div>
+    </section>
+    <a id="typography" class="hidden-close"></a>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <div class="footer-logo">
+                <span>طريق الويب</span>
+                <i class="fas fa-road"></i>
+            </div>
+            <p class="footer-description">
+                منصة تعليمية لتطوير الويب باللغة العربية، لتمكين الجميع من تعلم البرمجة.
+            </p>
+            <div class="social-links">
+                <a href="https://facebook.com" aria-label="فيسبوك">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" aria-label="تويتر">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" aria-label="لينكد إن">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" aria-label="جيت هب">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">روابط مهمة</h3>
+            <ul class="footer-links">
+                <li><a href="./html.html"><i class="fas fa-chevron-left"></i> HTML</a></li>
+                <li><a href="./css.html"><i class="fas fa-chevron-left"></i> CSS</a></li>
+                <li><a href="./javascript.html"><i class="fas fa-chevron-left"></i> JavaScript</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">اتصل بنا</h3>
+            <ul class="footer-links">
+                <li><a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a></li>
+                <li><a href="tel:+9647501234567"><i class="fas fa-phone"></i> +964 750 123 4567</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> العراق، كردستان</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>خارطة تطوير الويب ٢٠٢٤. جميع الحقوق محفوظة لفريقنا &copy;</p>
+        <nav class="language-selector">
+            <a href="../index.html">كردي</a>
+            <a href="./index.html" class="active">عربي</a>
+            <a href="../en/index.html">إنجليزي</a>
+        </nav>
+    </div>
+</footer>
+</div>
+
+</body>
+</html>
